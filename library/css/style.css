@@ -1,4 +1,3 @@
-@import url(flexslider.css);
 /******************************************************************
 Site Name: Digital Fertilizer
 Author: Chris Schmitz
@@ -10,22 +9,21 @@ the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
+@import url(flexslider.css);
 @font-face {
   font-family: 'Entypo';
-  src: url('fonts/entypo-social.eot');
-  src: url('fonts/entypo-social.eot?#iefix') format("embedded-opentype"), url('fonts/entypo-social.woff') format("woff"), url('fonts/entypo-social.ttf') format("truetype"), url('fonts/entypo-social.svg#EntypoRegular') format("svg");
+  src: url('fonts/entypo-social.eot?1365891060');
+  src: url('fonts/entypo-social.eot?&1365891060#iefix') format("embedded-opentype"), url('fonts/entypo-social.woff?1365891060') format("woff"), url('fonts/entypo-social.ttf?1365891060') format("truetype"), url('fonts/entypo-social.svg?1365891060#EntypoRegular') format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'flexslider-icon';
-  src: url('fonts/flexslider-icon.eot');
-  src: url('fonts/flexslider-icon.eot?#iefix') format("embedded-opentype"), url('fonts/flexslider-icon.woff') format("woff"), url('fonts/flexslider-icon.ttf') format("truetype"), url('fonts/flexslider-icon.svg#EntypoRegular') format("svg");
+  src: url('fonts/flexslider-icon.eot?1387550432');
+  src: url('fonts/flexslider-icon.eot?&1387550432#iefix') format("embedded-opentype"), url('fonts/flexslider-icon.woff?1387550432') format("woff"), url('fonts/flexslider-icon.ttf?1387550432') format("truetype"), url('fonts/flexslider-icon.svg?1387550432#EntypoRegular') format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
@@ -33,7 +31,7 @@ of the styles inside media queries.
 /*
  * Corrects `block` display not defined in IE6/7/8/9 & FF3.
  */
-/* line 21, ../scss/_normalize.scss */
+/* line 11, ../scss/_normalize.scss */
 article,
 aside,
 details,
@@ -51,7 +49,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
  */
-/* line 31, ../scss/_normalize.scss */
+/* line 29, ../scss/_normalize.scss */
 audio,
 canvas,
 video {
@@ -102,7 +100,7 @@ html {
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-/* line 82, ../scss/_normalize.scss */
+/* line 78, ../scss/_normalize.scss */
 html,
 button,
 input,
@@ -134,7 +132,7 @@ a:focus {
  * Improves readability when focused and also mouse hovered in all browsers.
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-/* line 112, ../scss/_normalize.scss */
+/* line 111, ../scss/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -194,7 +192,7 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
  */
-/* line 168, ../scss/_normalize.scss */
+/* line 167, ../scss/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -225,7 +223,7 @@ mark {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 198, ../scss/_normalize.scss */
+/* line 197, ../scss/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
@@ -235,7 +233,7 @@ pre {
  * Corrects font family set oddly in IE6, S4/5, Chrome.
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 210, ../scss/_normalize.scss */
+/* line 207, ../scss/_normalize.scss */
 code,
 kbd,
 pre,
@@ -266,7 +264,7 @@ q {
 /*
  * Addresses `quotes` property not supported in S4.
  */
-/* line 239, ../scss/_normalize.scss */
+/* line 238, ../scss/_normalize.scss */
 q:before,
 q:after {
   content: '';
@@ -282,7 +280,7 @@ small {
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  * gist.github.com/413930
  */
-/* line 254, ../scss/_normalize.scss */
+/* line 253, ../scss/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -307,7 +305,7 @@ sub {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 280, ../scss/_normalize.scss */
+/* line 277, ../scss/_normalize.scss */
 dl,
 menu,
 ol,
@@ -323,7 +321,7 @@ dd {
 /*
  * Addresses paddings set differently in IE6/7.
  */
-/* line 294, ../scss/_normalize.scss */
+/* line 292, ../scss/_normalize.scss */
 menu,
 ol,
 ul {
@@ -333,7 +331,7 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE7.
  */
-/* line 303, ../scss/_normalize.scss */
+/* line 302, ../scss/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -417,7 +415,7 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 387, ../scss/_normalize.scss */
+/* line 384, ../scss/_normalize.scss */
 button,
 input,
 select,
@@ -436,7 +434,7 @@ textarea {
  * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
  * UA stylesheet.
  */
-/* line 400, ../scss/_normalize.scss */
+/* line 399, ../scss/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -451,7 +449,7 @@ input {
  * 4. Removes inner spacing in IE7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE6.
  */
-/* line 417, ../scss/_normalize.scss */
+/* line 414, ../scss/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -467,7 +465,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 428, ../scss/_normalize.scss */
+/* line 427, ../scss/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -479,7 +477,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7.
  *    Known issue: excess padding remains in IE6.
  */
-/* line 440, ../scss/_normalize.scss */
+/* line 439, ../scss/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -510,7 +508,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X.
  */
-/* line 465, ../scss/_normalize.scss */
+/* line 464, ../scss/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -519,7 +517,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in FF3+.
  */
-/* line 474, ../scss/_normalize.scss */
+/* line 473, ../scss/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -590,7 +588,7 @@ dd {
   margin: 0;
 }
 
-/* line 534, ../scss/_normalize.scss */
+/* line 532, ../scss/_normalize.scss */
 .sidebar ul,
 .sidebar ol,
 .commentlist {
@@ -758,7 +756,7 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 237, ../scss/_mixins.scss */
+/* line 239, ../scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -770,7 +768,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 243, ../scss/_mixins.scss */
+/* line 245, ../scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -780,7 +778,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 247, ../scss/_mixins.scss */
+/* line 249, ../scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -1051,10 +1049,8 @@ SECTIONS
 /* line 248, ../scss/_base.scss */
 .content-secondary {
   background: #5a351d;
-  -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 20px;
   text-shadow: none;
@@ -1137,8 +1133,8 @@ and more scalable.
 .nav-container {
   background: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
 }
@@ -1473,13 +1469,11 @@ POSTS & CONTENT STYLES
   height: 150px;
   margin: 20px 0 10px;
   width: 100%;
-  -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25) inset;
   -moz-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25) inset;
 }
 /* line 741, ../scss/_base.scss */
@@ -1520,15 +1514,11 @@ POSTS & CONTENT STYLES
 /* line 773, ../scss/_base.scss */
 .news .excerpt-read-more {
   margin-top: 20px;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #299c00), color-stop(100%, #217d00));
-  background-image: -webkit-linear-gradient(top, #299c00, #217d00);
   background-image: -moz-linear-gradient(top, #299c00, #217d00);
-  background-image: -o-linear-gradient(top, #299c00, #217d00);
-  background-image: linear-gradient(top, #299c00, #217d00);
-  -webkit-border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, #299c00, #217d00);
+  background-image: linear-gradient(to bottom, #299c00, #217d00);
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 /* line 206, ../scss/_mixins.scss */
@@ -1547,26 +1537,24 @@ POSTS & CONTENT STYLES
 }
 /* line 223, ../scss/_mixins.scss */
 .news .excerpt-read-more:hover, .news .excerpt-read-more:focus {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #31ba00), color-stop(100%, #289700));
-  background-image: -webkit-linear-gradient(top, #31ba00, #289700);
   background-image: -moz-linear-gradient(top, #31ba00, #289700);
-  background-image: -o-linear-gradient(top, #31ba00, #289700);
-  background-image: linear-gradient(top, #31ba00, #289700);
-  -webkit-box-shadow: 0 0 3px #217d00;
+  background-image: -webkit-linear-gradient(top, #31ba00, #289700);
+  background-image: linear-gradient(to bottom, #31ba00, #289700);
   -moz-box-shadow: 0 0 3px #217d00;
+  -webkit-box-shadow: 0 0 3px #217d00;
   box-shadow: 0 0 3px #217d00;
+  outline: none;
 }
-/* line 228, ../scss/_mixins.scss */
+/* line 229, ../scss/_mixins.scss */
 .news .excerpt-read-more:active {
   color: #eee;
+  outline: none;
   text-shadow: none;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #289700), color-stop(100%, #1a6300));
-  background-image: -webkit-linear-gradient(top, #289700, #1a6300);
   background-image: -moz-linear-gradient(top, #289700, #1a6300);
-  background-image: -o-linear-gradient(top, #289700, #1a6300);
-  background-image: linear-gradient(top, #289700, #1a6300);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  background-image: -webkit-linear-gradient(top, #289700, #1a6300);
+  background-image: linear-gradient(to bottom, #289700, #1a6300);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
 }
 /* line 779, ../scss/_base.scss */
@@ -1583,57 +1571,64 @@ POSTS & CONTENT STYLES
   margin: 0;
 }
 /* line 791, ../scss/_base.scss */
-.newsletter form input {
+.newsletter form div {
+  position: relative;
+}
+/* line 795, ../scss/_base.scss */
+.newsletter form input[type="email"] {
   background: #fff;
   border: none !important;
-  -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
+  padding: 13px 12px;
 }
-/* line 798, ../scss/_base.scss */
-.newsletter .button {
-  margin: 12px 0 0;
-  width: 100%;
+/* line 802, ../scss/_base.scss */
+.newsletter form .button {
+  display: inline-block;
+  font-size: 13px;
+  padding: 10px 15px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 
-/* line 805, ../scss/_base.scss */
+/* line 814, ../scss/_base.scss */
 .sponsors {
   background: #eee;
   border-top: 1px solid #d5d5d5;
   border-bottom: 1px solid #d5d5d5;
   padding: 35px 0 45px;
   text-shadow: 0 1px 0 #fff;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) inset;
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) inset;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) inset;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) inset;
 }
-/* line 809, ../scss/_base.scss */
+/* line 818, ../scss/_base.scss */
 .sponsors .sponsor h3 {
   text-align: center;
 }
-/* line 813, ../scss/_base.scss */
+/* line 822, ../scss/_base.scss */
 .sponsors .sponsor .logo {
   min-height: 125px;
   text-align: center;
 }
-/* line 817, ../scss/_base.scss */
+/* line 826, ../scss/_base.scss */
 .sponsors .sponsor .logo img {
   max-width: 100%;
 }
 
-/* line 825, ../scss/_base.scss */
+/* line 834, ../scss/_base.scss */
 .about {
   margin-bottom: 45px;
 }
-/* line 828, ../scss/_base.scss */
+/* line 837, ../scss/_base.scss */
 .about .content p {
   color: #217d00;
   font-size: 24px;
 }
 
-/* line 835, ../scss/_base.scss */
+/* line 844, ../scss/_base.scss */
 .contact {
   padding: 35px 0 0;
 }
@@ -1641,13 +1636,13 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 844, ../scss/_base.scss */
+/* line 852, ../scss/_base.scss */
 .page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 847, ../scss/_base.scss */
+/* line 856, ../scss/_base.scss */
 .bones_page_navi {
   /* current page link */
   /* end .bones_page_navi .bpn-current */
@@ -1658,44 +1653,44 @@ PAGE NAVI STYLES
   /* first page link */
   /* last page link */
 }
-/* line 849, ../scss/_base.scss */
+/* line 858, ../scss/_base.scss */
 .bones_page_navi li {
   float: left;
   margin-left: 10px;
 }
-/* line 853, ../scss/_base.scss */
+/* line 862, ../scss/_base.scss */
 .bones_page_navi li a {
   padding: 3px 6px;
   display: block;
   text-decoration: none;
   position: relative;
 }
-/* line 860, ../scss/_base.scss */
+/* line 868, ../scss/_base.scss */
 .bones_page_navi li a:hover, .bones_page_navi li a:focus {
   color: #f01d4f;
   text-decoration: underline;
 }
-/* line 869, ../scss/_base.scss */
+/* line 878, ../scss/_base.scss */
 .bones_page_navi li.bpn-current {
   padding: 3px 6px;
   border-bottom: 2px solid #f01d4f;
   position: relative;
 }
-/* line 874, ../scss/_base.scss */
+/* line 883, ../scss/_base.scss */
 .bones_page_navi li.bpn-current a {
   /* hovering on current page link */
 }
-/* line 885, ../scss/_base.scss */
+/* line 893, ../scss/_base.scss */
 .bones_page_navi li.bpn-prev-link,
 .bones_page_navi li.bpn-next-link {
   font-weight: 700;
 }
-/* line 888, ../scss/_base.scss */
+/* line 897, ../scss/_base.scss */
 .bones_page_navi li.bpn-prev-link a,
 .bones_page_navi li.bpn-next-link a {
   padding: 0;
 }
-/* line 897, ../scss/_base.scss */
+/* line 903, ../scss/_base.scss */
 .bones_page_navi li.bpn-prev-link a:hover,
 .bones_page_navi li.bpn-next-link a:hover,
 .bones_page_navi li.bpn-first-page-link a:hover,
@@ -1705,11 +1700,11 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 940, ../scss/_base.scss */
+/* line 949, ../scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 944, ../scss/_base.scss */
+/* line 953, ../scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1719,12 +1714,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 955, ../scss/_base.scss */
+/* line 964, ../scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 972, ../scss/_base.scss */
+/* line 981, ../scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1735,7 +1730,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 974, ../scss/_base.scss */
+/* line 983, ../scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1745,63 +1740,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 982, ../scss/_base.scss */
+/* line 991, ../scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 986, ../scss/_base.scss */
+/* line 995, ../scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 1004, ../scss/_base.scss */
+/* line 1013, ../scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 1008, ../scss/_base.scss */
+/* line 1017, ../scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 1013, ../scss/_base.scss */
+/* line 1022, ../scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 1027, ../scss/_base.scss */
+/* line 1036, ../scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 1030, ../scss/_base.scss */
+/* line 1039, ../scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 1045, ../scss/_base.scss */
+/* line 1054, ../scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 1048, ../scss/_base.scss */
+/* line 1057, ../scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 1056, ../scss/_base.scss */
+/* line 1065, ../scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 1059, ../scss/_base.scss */
+/* line 1068, ../scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 1063, ../scss/_base.scss */
+/* line 1072, ../scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 1073, ../scss/_base.scss */
+/* line 1082, ../scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1809,17 +1804,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 1098, ../scss/_base.scss */
+/* line 1107, ../scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 1101, ../scss/_base.scss */
+/* line 1110, ../scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 1110, ../scss/_base.scss */
+/* line 1119, ../scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1831,7 +1826,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 1122, ../scss/_base.scss */
+/* line 1130, ../scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1840,22 +1835,22 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 1134, ../scss/_base.scss */
+/* line 1143, ../scss/_base.scss */
 #content .gform_wrapper, form {
   margin: 0.75em 0;
   max-width: 100%;
 }
-/* line 1138, ../scss/_base.scss */
+/* line 1147, ../scss/_base.scss */
 #content .gform_wrapper li, form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1145, ../scss/_base.scss */
+/* line 1154, ../scss/_base.scss */
 #content .gform_wrapper .gform_body .gform_fields .ginput_container .ginput_left, form .gform_body .gform_fields .ginput_container .ginput_left {
   width: 49%;
 }
-/* line 1151, ../scss/_base.scss */
+/* line 1157, ../scss/_base.scss */
 #content .gform_wrapper input[type=text],
 #content .gform_wrapper input[type=email],
 #content .gform_wrapper input[type=url],
@@ -1878,7 +1873,7 @@ form textarea {
   width: 100% !important;
   /* form validation */
 }
-/* line 1166, ../scss/_base.scss */
+/* line 1175, ../scss/_base.scss */
 #content .gform_wrapper input[type=text]:focus,
 #content .gform_wrapper input[type=email]:focus,
 #content .gform_wrapper input[type=url]:focus,
@@ -1888,12 +1883,12 @@ form input[type=url]:focus,
 form textarea:focus {
   background: #fff;
   border-color: #217d00;
-  -webkit-box-shadow: 0 0 6px rgba(33, 125, 0, 0.4);
   -moz-box-shadow: 0 0 6px rgba(33, 125, 0, 0.4);
+  -webkit-box-shadow: 0 0 6px rgba(33, 125, 0, 0.4);
   box-shadow: 0 0 6px rgba(33, 125, 0, 0.4);
   color: #333;
 }
-/* line 1174, ../scss/_base.scss */
+/* line 1183, ../scss/_base.scss */
 #content .gform_wrapper input[type=text]:invalid,
 #content .gform_wrapper input[type=email]:invalid,
 #content .gform_wrapper input[type=url]:invalid,
@@ -1909,7 +1904,7 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1187, ../scss/_base.scss */
+/* line 1194, ../scss/_base.scss */
 #content .gform_wrapper input[type=text],
 #content .gform_wrapper input[type=email],
 #content .gform_wrapper input[type=url], form input[type=text],
@@ -1918,7 +1913,7 @@ form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 1192, ../scss/_base.scss */
+/* line 1201, ../scss/_base.scss */
 #content .gform_wrapper textarea, form textarea {
   resize: none;
   width: 97.3%;
@@ -1927,7 +1922,7 @@ form input[type=url] {
 
 /* comment submit button */
 /* comment form title */
-/* line 1203, ../scss/_base.scss */
+/* line 1212, ../scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1935,13 +1930,13 @@ form input[type=url] {
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 1216, ../scss/_base.scss */
+/* line 1225, ../scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 1221, ../scss/_base.scss */
+/* line 1230, ../scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1949,7 +1944,7 @@ form input[type=url] {
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1237, ../scss/_base.scss */
+/* line 1246, ../scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }
@@ -1957,17 +1952,13 @@ SIDEBARS & ASIDES
 /*********************
 BUTTONS & ELEMENTS
 *********************/
-/* line 1258, ../scss/_base.scss */
+/* line 1267, ../scss/_base.scss */
 .button {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #299c00), color-stop(100%, #217d00));
-  background-image: -webkit-linear-gradient(top, #299c00, #217d00);
   background-image: -moz-linear-gradient(top, #299c00, #217d00);
-  background-image: -o-linear-gradient(top, #299c00, #217d00);
-  background-image: linear-gradient(top, #299c00, #217d00);
-  -webkit-border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, #299c00, #217d00);
+  background-image: linear-gradient(to bottom, #299c00, #217d00);
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 /* line 206, ../scss/_mixins.scss */
@@ -1986,39 +1977,33 @@ BUTTONS & ELEMENTS
 }
 /* line 223, ../scss/_mixins.scss */
 .button:hover, .button:focus {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #31ba00), color-stop(100%, #289700));
-  background-image: -webkit-linear-gradient(top, #31ba00, #289700);
   background-image: -moz-linear-gradient(top, #31ba00, #289700);
-  background-image: -o-linear-gradient(top, #31ba00, #289700);
-  background-image: linear-gradient(top, #31ba00, #289700);
-  -webkit-box-shadow: 0 0 3px #217d00;
+  background-image: -webkit-linear-gradient(top, #31ba00, #289700);
+  background-image: linear-gradient(to bottom, #31ba00, #289700);
   -moz-box-shadow: 0 0 3px #217d00;
+  -webkit-box-shadow: 0 0 3px #217d00;
   box-shadow: 0 0 3px #217d00;
+  outline: none;
 }
-/* line 228, ../scss/_mixins.scss */
+/* line 229, ../scss/_mixins.scss */
 .button:active {
   color: #eee;
+  outline: none;
   text-shadow: none;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #289700), color-stop(100%, #1a6300));
-  background-image: -webkit-linear-gradient(top, #289700, #1a6300);
   background-image: -moz-linear-gradient(top, #289700, #1a6300);
-  background-image: -o-linear-gradient(top, #289700, #1a6300);
-  background-image: linear-gradient(top, #289700, #1a6300);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  background-image: -webkit-linear-gradient(top, #289700, #1a6300);
+  background-image: linear-gradient(to bottom, #289700, #1a6300);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
 }
-/* line 1261, ../scss/_base.scss */
+/* line 1270, ../scss/_base.scss */
 .button.secondary {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #714324), color-stop(100%, #5a351d));
-  background-image: -webkit-linear-gradient(top, #714324, #5a351d);
   background-image: -moz-linear-gradient(top, #714324, #5a351d);
-  background-image: -o-linear-gradient(top, #714324, #5a351d);
-  background-image: linear-gradient(top, #714324, #5a351d);
-  -webkit-border-radius: 4px;
+  background-image: -webkit-linear-gradient(top, #714324, #5a351d);
+  background-image: linear-gradient(to bottom, #714324, #5a351d);
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 /* line 206, ../scss/_mixins.scss */
@@ -2037,40 +2022,38 @@ BUTTONS & ELEMENTS
 }
 /* line 223, ../scss/_mixins.scss */
 .button.secondary:hover, .button.secondary:focus {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #88502c), color-stop(100%, #6d4023));
-  background-image: -webkit-linear-gradient(top, #88502c, #6d4023);
   background-image: -moz-linear-gradient(top, #88502c, #6d4023);
-  background-image: -o-linear-gradient(top, #88502c, #6d4023);
-  background-image: linear-gradient(top, #88502c, #6d4023);
-  -webkit-box-shadow: 0 0 3px #5a351d;
+  background-image: -webkit-linear-gradient(top, #88502c, #6d4023);
+  background-image: linear-gradient(to bottom, #88502c, #6d4023);
   -moz-box-shadow: 0 0 3px #5a351d;
+  -webkit-box-shadow: 0 0 3px #5a351d;
   box-shadow: 0 0 3px #5a351d;
+  outline: none;
 }
-/* line 228, ../scss/_mixins.scss */
+/* line 229, ../scss/_mixins.scss */
 .button.secondary:active {
   color: #eee;
+  outline: none;
   text-shadow: none;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6d4023), color-stop(100%, #472a17));
-  background-image: -webkit-linear-gradient(top, #6d4023, #472a17);
   background-image: -moz-linear-gradient(top, #6d4023, #472a17);
-  background-image: -o-linear-gradient(top, #6d4023, #472a17);
-  background-image: linear-gradient(top, #6d4023, #472a17);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  background-image: -webkit-linear-gradient(top, #6d4023, #472a17);
+  background-image: linear-gradient(to bottom, #6d4023, #472a17);
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
 }
-/* line 1265, ../scss/_base.scss */
+/* line 1274, ../scss/_base.scss */
 .button.hollow {
   background: transparent;
   border: 3px solid white;
   color: white;
 }
-/* line 1270, ../scss/_base.scss */
+/* line 1279, ../scss/_base.scss */
 .button.hollow:hover {
   border-color: rgba(255, 255, 255, 0.75);
   color: rgba(255, 255, 255, 0.75);
 }
-/* line 1275, ../scss/_base.scss */
+/* line 1284, ../scss/_base.scss */
 .button.hollow:active {
   border-color: rgba(255, 255, 255, 0.5);
   color: rgba(255, 255, 255, 0.5);
@@ -2079,19 +2062,45 @@ BUTTONS & ELEMENTS
 /*********************
 FOOTER STYLES
 *********************/
-/* line 1286, ../scss/_base.scss */
+/* line 1295, ../scss/_base.scss */
 .footer {
+  margin-top: 25px;
+}
+/* line 1298, ../scss/_base.scss */
+.footer .footer-top {
+  background: #217d00;
+  color: #fff;
+  padding: 25px 0;
+  text-shadow: none;
+}
+/* line 1304, ../scss/_base.scss */
+.footer .footer-top h3, .footer .footer-top h4 {
+  color: #fff;
+}
+/* line 1309, ../scss/_base.scss */
+.footer .footer-top nav .logo {
+  max-width: 100%;
+  padding-right: 10px;
+}
+/* line 1314, ../scss/_base.scss */
+.footer .footer-top nav a {
+  color: #fff;
+  display: block;
+  font-weight: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 1324, ../scss/_base.scss */
+.footer .footer-bottom {
   background: #eee;
   border-top: 1px solid #ddd;
-  clear: both;
+  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
+  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
   color: #333;
   font-size: .85em;
-  margin-top: 25px;
   text-align: center;
   text-shadow: 0 1px 0 #fff;
-  -webkit-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
-  -moz-box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.6) inset;
 }
 
 /*
@@ -2104,7 +2113,7 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/* line 1323, ../scss/_base.scss */
+/* line 1359, ../scss/_base.scss */
 .icon {
   display: inline-block;
   font-family: 'Entypo';
@@ -2116,28 +2125,28 @@ view.
   -transition: 0.3s color;
   transition: 0.3s color;
 }
-/* line 1331, ../scss/_base.scss */
+/* line 1367, ../scss/_base.scss */
 .icon:hover {
   color: #000 !important;
 }
-/* line 1332, ../scss/_base.scss */
+/* line 1368, ../scss/_base.scss */
 .icon.twitter {
   color: #4099ff;
 }
-/* line 1333, ../scss/_base.scss */
+/* line 1369, ../scss/_base.scss */
 .icon.facebook {
   color: #3B5998;
 }
-/* line 1334, ../scss/_base.scss */
+/* line 1370, ../scss/_base.scss */
 .icon.linkedin {
   color: #007bb6;
 }
-/* line 1335, ../scss/_base.scss */
+/* line 1371, ../scss/_base.scss */
 .icon.google {
   color: #d34836;
 }
 
-/* line 1339, ../scss/_base.scss */
+/* line 1375, ../scss/_base.scss */
 .twitter-tweet {
   margin: 0 auto !important;
 }
@@ -2404,7 +2413,7 @@ you can add resource intensive styles.
     has the possibility of being a mobile device.
     */
   }
-  /* line 68, ../scss/_768up.scss */
+  /* line 67, ../scss/_768up.scss */
   .nav li ul.sub-menu,
   .nav li ul.children {
     margin-top: 0;
@@ -2632,7 +2641,7 @@ be set to display none.
     content: " (" attr(title) ")";
   }
 
-  /* line 40, ../scss/_print.scss */
+  /* line 38, ../scss/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
@@ -2662,21 +2671,20 @@ be set to display none.
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   /* line 65, ../scss/_print.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 71, ../scss/_print.scss */
+  /* line 70, ../scss/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 
-  /* line 80, ../scss/_print.scss */
+  /* line 76, ../scss/_print.scss */
   .sidebar,
   .page-navigation,
   .wp-prev-next,

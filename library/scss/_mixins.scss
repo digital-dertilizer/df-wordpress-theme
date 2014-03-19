@@ -223,10 +223,12 @@ BUTTONS
 	&:hover, &:focus {
 		@include background-image(linear-gradient(top, lighten($color, 12%), lighten($color, 5%)));
 		@include box-shadow(0 0 3px $color);
+		outline: none;
 	}
 
 	&:active {
 		color: #eee;
+		outline: none;
 		text-shadow: none;
 
 		@include background-image(linear-gradient(top, lighten($color, 5%), darken($color, 5%)));

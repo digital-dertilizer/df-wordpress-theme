@@ -27,9 +27,11 @@
 						<p>Get a monthly recap of past events, upcoming events, job postings, and area startup news!</p>
 
 						<!-- TODO: Setup MailChimp form -->
-						<form action="">
-							<input type="email" placeholder="Email Address">
-							<button type="submit" class="button">Sign Me Up</button>
+						<form action="" class="mailchimp-signup">
+							<div>
+								<input type="email" placeholder="Email Address">
+								<button type="submit" class="button">Sign Up</button>
+							</div>
 						</form>
 					</div>
 				</div>
