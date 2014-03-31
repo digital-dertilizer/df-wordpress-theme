@@ -1,24 +1,23 @@
 <?php get_header(); ?>
 
-	<header>
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-	</header>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<h1 class="title-bar"><?php the_title(); ?></h1>
+		<header>
+			<h1 class="title-bar"><?php the_title(); ?></h1>
+		</header>
 
-	<?php $focus = get_post_meta( get_the_ID(), 'focus_image' ); ?>
+		<?php $focus = get_post_meta( get_the_ID(), 'focus' ); ?>
+		<?php if ( ! empty( $focus ) ) : ?>
+			<div class="focus">
+				<img class="focus-image" src="<?php echo $focus[0]; ?>" alt="">
+			</div>
+		<?php endif; ?>
 
-	<?php if ( $focus ) : ?>
-		<div class="focus">
-			<?php echo $focus; ?>
+		<div class="wrap" id="main" role="main">
+			<article class="hentry clearfix">
+				<?php the_content(); ?>
+			</article>
 		</div>
-	<?php endif; ?>
-
-	<div class="wrap" id="main" role="main">
-		<article class="hentry clearfix">
-			<?php the_content(); ?>
-		</article>
-	</div>
 
 	<?php endwhile; else : ?>
 

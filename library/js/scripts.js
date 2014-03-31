@@ -55,18 +55,12 @@ jQuery(document).ready(function($) {
 	/* if is above or equal to 768px */
 	if (responsive_viewport >= 768) {
 
-		/* load gravatars */
-		$('.comment img[data-gravatar]').each(function(){
-			$(this).attr('src',$(this).attr('data-gravatar'));
-		});
-
 	}
 
 	/* off the bat large screen actions */
 	if (responsive_viewport > 1030) {
 
 	}
-
 
 	// add all your scripts here
 	$('#menu-main-nav').find('a').add('#beam-me-up').click(function(e) {

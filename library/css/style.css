@@ -859,6 +859,7 @@ html[xmlns] .slides {
 
 /* line 58, ../scss/_flexslider.scss */
 .flex-direction-nav a:before {
+  color: #fff;
   font-family: "flexslider-icon";
   font-size: 40px;
   display: inline-block;
@@ -997,138 +998,3577 @@ html[xmlns] .slides {
     right: 10px;
   }
 }
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Grid Stylesheet
-
-I've seperated the grid so you can swap it out easily. It's
-called at the top the style.scss stylesheet.
-
-There are a ton of grid solutions out there. You should definitely
-experiment with your own. Here are some recommendations:
-
-http://gridsetapp.com - Love this site. Responsive Grids made easy.
-http://susy.oddbird.net/ - Grids using Compass. Very elegant.
-http://gridpak.com/ - Create your own responsive grid.
-
-The grid below is a combination of the 1140 grid and Twitter Boostrap. 
-I liked 1140 but Boostrap's grid was way more detailed so I merged them 
-together, let's see how this works out. If you want to use 1140, the original 
-values are commented out on each line.
-
-******************************************************************/
-/* line 24, ../scss/_grid.scss */
+/* line 1, ../scss/_grid.scss */
 .onecol {
   width: 5.801104972%;
 }
 
 /* 4.85%;  } /* grid_1  */
-/* line 25, ../scss/_grid.scss */
+/* line 2, ../scss/_grid.scss */
 .twocol {
   width: 14.364640883%;
 }
 
 /* 13.45%; } /* grid_2  */
-/* line 26, ../scss/_grid.scss */
+/* line 3, ../scss/_grid.scss */
 .threecol {
   width: 22.928176794%;
 }
 
 /* 22.05%; } /* grid_3  */
-/* line 27, ../scss/_grid.scss */
+/* line 4, ../scss/_grid.scss */
 .fourcol {
   width: 31.491712705%;
 }
 
 /* 30.75%; } /* grid_4  */
-/* line 28, ../scss/_grid.scss */
+/* line 5, ../scss/_grid.scss */
 .fivecol {
   width: 40.055248616%;
 }
 
 /* 39.45%; } /* grid_5  */
-/* line 29, ../scss/_grid.scss */
+/* line 6, ../scss/_grid.scss */
 .sixcol {
   width: 48.618784527%;
 }
 
 /* 48%;    } /* grid_6  */
-/* line 30, ../scss/_grid.scss */
+/* line 7, ../scss/_grid.scss */
 .sevencol {
   width: 57.182320438000005%;
 }
 
 /* 56.75%; } /* grid_7  */
-/* line 31, ../scss/_grid.scss */
+/* line 8, ../scss/_grid.scss */
 .eightcol {
   width: 65.74585634900001%;
 }
 
 /* 65.4%;  } /* grid_8  */
-/* line 32, ../scss/_grid.scss */
+/* line 9, ../scss/_grid.scss */
 .ninecol {
   width: 74.30939226%;
 }
 
 /* 74.05%; } /* grid_9  */
-/* line 33, ../scss/_grid.scss */
+/* line 10, ../scss/_grid.scss */
 .tencol {
   width: 82.87292817100001%;
 }
 
 /* 82.7%;  } /* grid_10 */
-/* line 34, ../scss/_grid.scss */
+/* line 11, ../scss/_grid.scss */
 .elevencol {
   width: 91.436464082%;
 }
 
 /* 91.35%; } /* grid_11 */
-/* line 35, ../scss/_grid.scss */
+/* line 12, ../scss/_grid.scss */
 .twelvecol {
   width: 99.999999993%;
 }
 
 /* 100%;   } /* grid_12 */
-/* line 38, ../scss/_grid.scss */
+/* line 15, ../scss/_grid.scss */
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   float: left;
   margin-left: 2.762430939%;
 }
 
-/* line 44, ../scss/_grid.scss */
+/* line 21, ../scss/_grid.scss */
 .first {
   margin-left: 0;
 }
 
-/* line 48, ../scss/_grid.scss */
+/* line 25, ../scss/_grid.scss */
 .last {
   float: right;
 }
 
+/* line 30, ../scss/_grid.scss */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  *zoom: 1;
+}
+
+/* line 38, ../scss/_grid.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 41, ../scss/_grid.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 43, ../scss/_grid.scss */
+.row.collapse > .column,
+.row.collapse > .columns {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 47, ../scss/_grid.scss */
+.row.collapse .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 50, ../scss/_grid.scss */
+.row .row {
+  width: auto;
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
+  *zoom: 1;
+}
+
+/* line 58, ../scss/_grid.scss */
+.row .row:before, .row .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 61, ../scss/_grid.scss */
+.row .row:after {
+  clear: both;
+}
+
+/* line 63, ../scss/_grid.scss */
+.row .row.collapse {
+  width: auto;
+  margin: 0;
+  max-width: none;
+  *zoom: 1;
+}
+
+/* line 68, ../scss/_grid.scss */
+.row .row.collapse:before, .row .row.collapse:after {
+  content: " ";
+  display: table;
+}
+
+/* line 71, ../scss/_grid.scss */
+.row .row.collapse:after {
+  clear: both;
+}
+
+/* line 74, ../scss/_grid.scss */
+.column,
+.columns {
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  width: 100%;
+  float: left;
+}
+
+@media only screen {
+  /* line 82, ../scss/_grid.scss */
+  .column.small-centered,
+  .columns.small-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+  }
+
+  /* line 88, ../scss/_grid.scss */
+  .column.small-uncentered,
+  .columns.small-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left !important;
+  }
+
+  /* line 94, ../scss/_grid.scss */
+  .column.small-uncentered.opposite,
+  .columns.small-uncentered.opposite {
+    float: right;
+  }
+
+  /* line 98, ../scss/_grid.scss */
+  .small-push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 103, ../scss/_grid.scss */
+  .small-pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 108, ../scss/_grid.scss */
+  .small-push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 113, ../scss/_grid.scss */
+  .small-pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 118, ../scss/_grid.scss */
+  .small-push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 123, ../scss/_grid.scss */
+  .small-pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 128, ../scss/_grid.scss */
+  .small-push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 133, ../scss/_grid.scss */
+  .small-pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 138, ../scss/_grid.scss */
+  .small-push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 143, ../scss/_grid.scss */
+  .small-pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 148, ../scss/_grid.scss */
+  .small-push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 153, ../scss/_grid.scss */
+  .small-pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 158, ../scss/_grid.scss */
+  .small-push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 163, ../scss/_grid.scss */
+  .small-pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 168, ../scss/_grid.scss */
+  .small-push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 173, ../scss/_grid.scss */
+  .small-pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 178, ../scss/_grid.scss */
+  .small-push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 183, ../scss/_grid.scss */
+  .small-pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 188, ../scss/_grid.scss */
+  .small-push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 193, ../scss/_grid.scss */
+  .small-pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 198, ../scss/_grid.scss */
+  .small-push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 203, ../scss/_grid.scss */
+  .small-pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 208, ../scss/_grid.scss */
+  .small-push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 213, ../scss/_grid.scss */
+  .small-pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+
+  /* line 218, ../scss/_grid.scss */
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 225, ../scss/_grid.scss */
+  .small-1 {
+    width: 8.33333%;
+  }
+
+  /* line 228, ../scss/_grid.scss */
+  .small-2 {
+    width: 16.66667%;
+  }
+
+  /* line 231, ../scss/_grid.scss */
+  .small-3 {
+    width: 25%;
+  }
+
+  /* line 234, ../scss/_grid.scss */
+  .small-4 {
+    width: 33.33333%;
+  }
+
+  /* line 237, ../scss/_grid.scss */
+  .small-5 {
+    width: 41.66667%;
+  }
+
+  /* line 240, ../scss/_grid.scss */
+  .small-6 {
+    width: 50%;
+  }
+
+  /* line 243, ../scss/_grid.scss */
+  .small-7 {
+    width: 58.33333%;
+  }
+
+  /* line 246, ../scss/_grid.scss */
+  .small-8 {
+    width: 66.66667%;
+  }
+
+  /* line 249, ../scss/_grid.scss */
+  .small-9 {
+    width: 75%;
+  }
+
+  /* line 252, ../scss/_grid.scss */
+  .small-10 {
+    width: 83.33333%;
+  }
+
+  /* line 255, ../scss/_grid.scss */
+  .small-11 {
+    width: 91.66667%;
+  }
+
+  /* line 258, ../scss/_grid.scss */
+  .small-12 {
+    width: 100%;
+  }
+
+  /* line 261, ../scss/_grid.scss */
+  [class*="column"] + [class*="column"]:last-child {
+    float: right;
+  }
+
+  /* line 264, ../scss/_grid.scss */
+  [class*="column"] + [class*="column"].end {
+    float: left;
+  }
+
+  /* line 267, ../scss/_grid.scss */
+  .small-offset-0 {
+    margin-left: 0% !important;
+  }
+
+  /* line 270, ../scss/_grid.scss */
+  .small-offset-1 {
+    margin-left: 8.33333% !important;
+  }
+
+  /* line 273, ../scss/_grid.scss */
+  .small-offset-2 {
+    margin-left: 16.66667% !important;
+  }
+
+  /* line 276, ../scss/_grid.scss */
+  .small-offset-3 {
+    margin-left: 25% !important;
+  }
+
+  /* line 279, ../scss/_grid.scss */
+  .small-offset-4 {
+    margin-left: 33.33333% !important;
+  }
+
+  /* line 282, ../scss/_grid.scss */
+  .small-offset-5 {
+    margin-left: 41.66667% !important;
+  }
+
+  /* line 285, ../scss/_grid.scss */
+  .small-offset-6 {
+    margin-left: 50% !important;
+  }
+
+  /* line 288, ../scss/_grid.scss */
+  .small-offset-7 {
+    margin-left: 58.33333% !important;
+  }
+
+  /* line 291, ../scss/_grid.scss */
+  .small-offset-8 {
+    margin-left: 66.66667% !important;
+  }
+
+  /* line 294, ../scss/_grid.scss */
+  .small-offset-9 {
+    margin-left: 75% !important;
+  }
+
+  /* line 297, ../scss/_grid.scss */
+  .small-offset-10 {
+    margin-left: 83.33333% !important;
+  }
+
+  /* line 300, ../scss/_grid.scss */
+  .small-offset-11 {
+    margin-left: 91.66667% !important;
+  }
+
+  /* line 303, ../scss/_grid.scss */
+  .small-reset-order,
+  .small-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 311, ../scss/_grid.scss */
+  .column.medium-centered,
+  .columns.medium-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+  }
+
+  /* line 317, ../scss/_grid.scss */
+  .column.medium-uncentered,
+  .columns.medium-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left !important;
+  }
+
+  /* line 323, ../scss/_grid.scss */
+  .column.medium-uncentered.opposite,
+  .columns.medium-uncentered.opposite {
+    float: right;
+  }
+
+  /* line 327, ../scss/_grid.scss */
+  .medium-push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 332, ../scss/_grid.scss */
+  .medium-pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 337, ../scss/_grid.scss */
+  .medium-push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 342, ../scss/_grid.scss */
+  .medium-pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 347, ../scss/_grid.scss */
+  .medium-push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 352, ../scss/_grid.scss */
+  .medium-pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 357, ../scss/_grid.scss */
+  .medium-push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 362, ../scss/_grid.scss */
+  .medium-pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 367, ../scss/_grid.scss */
+  .medium-push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 372, ../scss/_grid.scss */
+  .medium-pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 377, ../scss/_grid.scss */
+  .medium-push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 382, ../scss/_grid.scss */
+  .medium-pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 387, ../scss/_grid.scss */
+  .medium-push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 392, ../scss/_grid.scss */
+  .medium-pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 397, ../scss/_grid.scss */
+  .medium-push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 402, ../scss/_grid.scss */
+  .medium-pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 407, ../scss/_grid.scss */
+  .medium-push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 412, ../scss/_grid.scss */
+  .medium-pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 417, ../scss/_grid.scss */
+  .medium-push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 422, ../scss/_grid.scss */
+  .medium-pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 427, ../scss/_grid.scss */
+  .medium-push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 432, ../scss/_grid.scss */
+  .medium-pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 437, ../scss/_grid.scss */
+  .medium-push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 442, ../scss/_grid.scss */
+  .medium-pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+
+  /* line 447, ../scss/_grid.scss */
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 454, ../scss/_grid.scss */
+  .medium-1 {
+    width: 8.33333%;
+  }
+
+  /* line 457, ../scss/_grid.scss */
+  .medium-2 {
+    width: 16.66667%;
+  }
+
+  /* line 460, ../scss/_grid.scss */
+  .medium-3 {
+    width: 25%;
+  }
+
+  /* line 463, ../scss/_grid.scss */
+  .medium-4 {
+    width: 33.33333%;
+  }
+
+  /* line 466, ../scss/_grid.scss */
+  .medium-5 {
+    width: 41.66667%;
+  }
+
+  /* line 469, ../scss/_grid.scss */
+  .medium-6 {
+    width: 50%;
+  }
+
+  /* line 472, ../scss/_grid.scss */
+  .medium-7 {
+    width: 58.33333%;
+  }
+
+  /* line 475, ../scss/_grid.scss */
+  .medium-8 {
+    width: 66.66667%;
+  }
+
+  /* line 478, ../scss/_grid.scss */
+  .medium-9 {
+    width: 75%;
+  }
+
+  /* line 481, ../scss/_grid.scss */
+  .medium-10 {
+    width: 83.33333%;
+  }
+
+  /* line 484, ../scss/_grid.scss */
+  .medium-11 {
+    width: 91.66667%;
+  }
+
+  /* line 487, ../scss/_grid.scss */
+  .medium-12 {
+    width: 100%;
+  }
+
+  /* line 490, ../scss/_grid.scss */
+  [class*="column"] + [class*="column"]:last-child {
+    float: right;
+  }
+
+  /* line 493, ../scss/_grid.scss */
+  [class*="column"] + [class*="column"].end {
+    float: left;
+  }
+
+  /* line 496, ../scss/_grid.scss */
+  .medium-offset-0 {
+    margin-left: 0% !important;
+  }
+
+  /* line 499, ../scss/_grid.scss */
+  .medium-offset-1 {
+    margin-left: 8.33333% !important;
+  }
+
+  /* line 502, ../scss/_grid.scss */
+  .medium-offset-2 {
+    margin-left: 16.66667% !important;
+  }
+
+  /* line 505, ../scss/_grid.scss */
+  .medium-offset-3 {
+    margin-left: 25% !important;
+  }
+
+  /* line 508, ../scss/_grid.scss */
+  .medium-offset-4 {
+    margin-left: 33.33333% !important;
+  }
+
+  /* line 511, ../scss/_grid.scss */
+  .medium-offset-5 {
+    margin-left: 41.66667% !important;
+  }
+
+  /* line 514, ../scss/_grid.scss */
+  .medium-offset-6 {
+    margin-left: 50% !important;
+  }
+
+  /* line 517, ../scss/_grid.scss */
+  .medium-offset-7 {
+    margin-left: 58.33333% !important;
+  }
+
+  /* line 520, ../scss/_grid.scss */
+  .medium-offset-8 {
+    margin-left: 66.66667% !important;
+  }
+
+  /* line 523, ../scss/_grid.scss */
+  .medium-offset-9 {
+    margin-left: 75% !important;
+  }
+
+  /* line 526, ../scss/_grid.scss */
+  .medium-offset-10 {
+    margin-left: 83.33333% !important;
+  }
+
+  /* line 529, ../scss/_grid.scss */
+  .medium-offset-11 {
+    margin-left: 91.66667% !important;
+  }
+
+  /* line 532, ../scss/_grid.scss */
+  .medium-reset-order,
+  .medium-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left;
+  }
+
+  /* line 540, ../scss/_grid.scss */
+  .push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 545, ../scss/_grid.scss */
+  .pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 550, ../scss/_grid.scss */
+  .push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 555, ../scss/_grid.scss */
+  .pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 560, ../scss/_grid.scss */
+  .push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 565, ../scss/_grid.scss */
+  .pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 570, ../scss/_grid.scss */
+  .push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 575, ../scss/_grid.scss */
+  .pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 580, ../scss/_grid.scss */
+  .push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 585, ../scss/_grid.scss */
+  .pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 590, ../scss/_grid.scss */
+  .push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 595, ../scss/_grid.scss */
+  .pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 600, ../scss/_grid.scss */
+  .push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 605, ../scss/_grid.scss */
+  .pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 610, ../scss/_grid.scss */
+  .push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 615, ../scss/_grid.scss */
+  .pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 620, ../scss/_grid.scss */
+  .push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 625, ../scss/_grid.scss */
+  .pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 630, ../scss/_grid.scss */
+  .push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 635, ../scss/_grid.scss */
+  .pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 640, ../scss/_grid.scss */
+  .push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 645, ../scss/_grid.scss */
+  .pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 650, ../scss/_grid.scss */
+  .push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 655, ../scss/_grid.scss */
+  .pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 660, ../scss/_grid.scss */
+  .column.large-centered,
+  .columns.large-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+  }
+
+  /* line 666, ../scss/_grid.scss */
+  .column.large-uncentered,
+  .columns.large-uncentered {
+    margin-left: 0;
+    margin-right: 0;
+    float: left !important;
+  }
+
+  /* line 672, ../scss/_grid.scss */
+  .column.large-uncentered.opposite,
+  .columns.large-uncentered.opposite {
+    float: right;
+  }
+
+  /* line 676, ../scss/_grid.scss */
+  .large-push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 681, ../scss/_grid.scss */
+  .large-pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 686, ../scss/_grid.scss */
+  .large-push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 691, ../scss/_grid.scss */
+  .large-pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 696, ../scss/_grid.scss */
+  .large-push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 701, ../scss/_grid.scss */
+  .large-pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 706, ../scss/_grid.scss */
+  .large-push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 711, ../scss/_grid.scss */
+  .large-pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 716, ../scss/_grid.scss */
+  .large-push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 721, ../scss/_grid.scss */
+  .large-pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 726, ../scss/_grid.scss */
+  .large-push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 731, ../scss/_grid.scss */
+  .large-pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 736, ../scss/_grid.scss */
+  .large-push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 741, ../scss/_grid.scss */
+  .large-pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 746, ../scss/_grid.scss */
+  .large-push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 751, ../scss/_grid.scss */
+  .large-pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 756, ../scss/_grid.scss */
+  .large-push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 761, ../scss/_grid.scss */
+  .large-pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 766, ../scss/_grid.scss */
+  .large-push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 771, ../scss/_grid.scss */
+  .large-pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 776, ../scss/_grid.scss */
+  .large-push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 781, ../scss/_grid.scss */
+  .large-pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 786, ../scss/_grid.scss */
+  .large-push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 791, ../scss/_grid.scss */
+  .large-pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+
+  /* line 796, ../scss/_grid.scss */
+  .column,
+  .columns {
+    position: relative;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    float: left;
+  }
+
+  /* line 803, ../scss/_grid.scss */
+  .large-1 {
+    width: 8.33333%;
+  }
+
+  /* line 806, ../scss/_grid.scss */
+  .large-2 {
+    width: 16.66667%;
+  }
+
+  /* line 809, ../scss/_grid.scss */
+  .large-3 {
+    width: 25%;
+  }
+
+  /* line 812, ../scss/_grid.scss */
+  .large-4 {
+    width: 33.33333%;
+  }
+
+  /* line 815, ../scss/_grid.scss */
+  .large-5 {
+    width: 41.66667%;
+  }
+
+  /* line 818, ../scss/_grid.scss */
+  .large-6 {
+    width: 50%;
+  }
+
+  /* line 821, ../scss/_grid.scss */
+  .large-7 {
+    width: 58.33333%;
+  }
+
+  /* line 824, ../scss/_grid.scss */
+  .large-8 {
+    width: 66.66667%;
+  }
+
+  /* line 827, ../scss/_grid.scss */
+  .large-9 {
+    width: 75%;
+  }
+
+  /* line 830, ../scss/_grid.scss */
+  .large-10 {
+    width: 83.33333%;
+  }
+
+  /* line 833, ../scss/_grid.scss */
+  .large-11 {
+    width: 91.66667%;
+  }
+
+  /* line 836, ../scss/_grid.scss */
+  .large-12 {
+    width: 100%;
+  }
+
+  /* line 839, ../scss/_grid.scss */
+  [class*="column"] + [class*="column"]:last-child {
+    float: right;
+  }
+
+  /* line 842, ../scss/_grid.scss */
+  [class*="column"] + [class*="column"].end {
+    float: left;
+  }
+
+  /* line 845, ../scss/_grid.scss */
+  .large-offset-0 {
+    margin-left: 0% !important;
+  }
+
+  /* line 848, ../scss/_grid.scss */
+  .large-offset-1 {
+    margin-left: 8.33333% !important;
+  }
+
+  /* line 851, ../scss/_grid.scss */
+  .large-offset-2 {
+    margin-left: 16.66667% !important;
+  }
+
+  /* line 854, ../scss/_grid.scss */
+  .large-offset-3 {
+    margin-left: 25% !important;
+  }
+
+  /* line 857, ../scss/_grid.scss */
+  .large-offset-4 {
+    margin-left: 33.33333% !important;
+  }
+
+  /* line 860, ../scss/_grid.scss */
+  .large-offset-5 {
+    margin-left: 41.66667% !important;
+  }
+
+  /* line 863, ../scss/_grid.scss */
+  .large-offset-6 {
+    margin-left: 50% !important;
+  }
+
+  /* line 866, ../scss/_grid.scss */
+  .large-offset-7 {
+    margin-left: 58.33333% !important;
+  }
+
+  /* line 869, ../scss/_grid.scss */
+  .large-offset-8 {
+    margin-left: 66.66667% !important;
+  }
+
+  /* line 872, ../scss/_grid.scss */
+  .large-offset-9 {
+    margin-left: 75% !important;
+  }
+
+  /* line 875, ../scss/_grid.scss */
+  .large-offset-10 {
+    margin-left: 83.33333% !important;
+  }
+
+  /* line 878, ../scss/_grid.scss */
+  .large-offset-11 {
+    margin-left: 91.66667% !important;
+  }
+
+  /* line 881, ../scss/_grid.scss */
+  .large-reset-order,
+  .large-reset-order {
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    float: left;
+  }
+
+  /* line 889, ../scss/_grid.scss */
+  .push-0 {
+    position: relative;
+    left: 0%;
+    right: auto;
+  }
+
+  /* line 894, ../scss/_grid.scss */
+  .pull-0 {
+    position: relative;
+    right: 0%;
+    left: auto;
+  }
+
+  /* line 899, ../scss/_grid.scss */
+  .push-1 {
+    position: relative;
+    left: 8.33333%;
+    right: auto;
+  }
+
+  /* line 904, ../scss/_grid.scss */
+  .pull-1 {
+    position: relative;
+    right: 8.33333%;
+    left: auto;
+  }
+
+  /* line 909, ../scss/_grid.scss */
+  .push-2 {
+    position: relative;
+    left: 16.66667%;
+    right: auto;
+  }
+
+  /* line 914, ../scss/_grid.scss */
+  .pull-2 {
+    position: relative;
+    right: 16.66667%;
+    left: auto;
+  }
+
+  /* line 919, ../scss/_grid.scss */
+  .push-3 {
+    position: relative;
+    left: 25%;
+    right: auto;
+  }
+
+  /* line 924, ../scss/_grid.scss */
+  .pull-3 {
+    position: relative;
+    right: 25%;
+    left: auto;
+  }
+
+  /* line 929, ../scss/_grid.scss */
+  .push-4 {
+    position: relative;
+    left: 33.33333%;
+    right: auto;
+  }
+
+  /* line 934, ../scss/_grid.scss */
+  .pull-4 {
+    position: relative;
+    right: 33.33333%;
+    left: auto;
+  }
+
+  /* line 939, ../scss/_grid.scss */
+  .push-5 {
+    position: relative;
+    left: 41.66667%;
+    right: auto;
+  }
+
+  /* line 944, ../scss/_grid.scss */
+  .pull-5 {
+    position: relative;
+    right: 41.66667%;
+    left: auto;
+  }
+
+  /* line 949, ../scss/_grid.scss */
+  .push-6 {
+    position: relative;
+    left: 50%;
+    right: auto;
+  }
+
+  /* line 954, ../scss/_grid.scss */
+  .pull-6 {
+    position: relative;
+    right: 50%;
+    left: auto;
+  }
+
+  /* line 959, ../scss/_grid.scss */
+  .push-7 {
+    position: relative;
+    left: 58.33333%;
+    right: auto;
+  }
+
+  /* line 964, ../scss/_grid.scss */
+  .pull-7 {
+    position: relative;
+    right: 58.33333%;
+    left: auto;
+  }
+
+  /* line 969, ../scss/_grid.scss */
+  .push-8 {
+    position: relative;
+    left: 66.66667%;
+    right: auto;
+  }
+
+  /* line 974, ../scss/_grid.scss */
+  .pull-8 {
+    position: relative;
+    right: 66.66667%;
+    left: auto;
+  }
+
+  /* line 979, ../scss/_grid.scss */
+  .push-9 {
+    position: relative;
+    left: 75%;
+    right: auto;
+  }
+
+  /* line 984, ../scss/_grid.scss */
+  .pull-9 {
+    position: relative;
+    right: 75%;
+    left: auto;
+  }
+
+  /* line 989, ../scss/_grid.scss */
+  .push-10 {
+    position: relative;
+    left: 83.33333%;
+    right: auto;
+  }
+
+  /* line 994, ../scss/_grid.scss */
+  .pull-10 {
+    position: relative;
+    right: 83.33333%;
+    left: auto;
+  }
+
+  /* line 999, ../scss/_grid.scss */
+  .push-11 {
+    position: relative;
+    left: 91.66667%;
+    right: auto;
+  }
+
+  /* line 1004, ../scss/_grid.scss */
+  .pull-11 {
+    position: relative;
+    right: 91.66667%;
+    left: auto;
+  }
+}
+/* line 1008, ../scss/_grid.scss */
+[class*="block-grid-"] {
+  display: block;
+  padding: 0;
+  margin: 0;
+  *zoom: 1;
+}
+
+/* line 1013, ../scss/_grid.scss */
+[class*="block-grid-"]:before, [class*="block-grid-"]:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1016, ../scss/_grid.scss */
+[class*="block-grid-"]:after {
+  clear: both;
+}
+
+/* line 1018, ../scss/_grid.scss */
+[class*="block-grid-"] > li {
+  display: block;
+  height: auto;
+  float: left;
+  padding: 0 0.9375em 1.875em;
+}
+
+@media only screen {
+  /* line 1025, ../scss/_grid.scss */
+  .small-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+
+  /* line 1028, ../scss/_grid.scss */
+  .small-block-grid-1 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1030, ../scss/_grid.scss */
+  .small-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 1032, ../scss/_grid.scss */
+  .small-block-grid-1 > li:nth-child(1n) {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  /* line 1036, ../scss/_grid.scss */
+  .small-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 1039, ../scss/_grid.scss */
+  .small-block-grid-2 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1041, ../scss/_grid.scss */
+  .small-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 1043, ../scss/_grid.scss */
+  .small-block-grid-2 > li:nth-child(2n+1) {
+    padding-left: 0em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1046, ../scss/_grid.scss */
+  .small-block-grid-2 > li:nth-child(2n) {
+    padding-left: 0.9375em;
+    padding-right: 0em;
+  }
+
+  /* line 1050, ../scss/_grid.scss */
+  .small-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+
+  /* line 1053, ../scss/_grid.scss */
+  .small-block-grid-3 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1055, ../scss/_grid.scss */
+  .small-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 1057, ../scss/_grid.scss */
+  .small-block-grid-3 > li:nth-child(3n+1) {
+    padding-left: 0em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1060, ../scss/_grid.scss */
+  .small-block-grid-3 > li:nth-child(3n+2) {
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1063, ../scss/_grid.scss */
+  .small-block-grid-3 > li:nth-child(3n) {
+    padding-left: 1.25em;
+    padding-right: 0em;
+  }
+
+  /* line 1067, ../scss/_grid.scss */
+  .small-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+
+  /* line 1070, ../scss/_grid.scss */
+  .small-block-grid-4 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1072, ../scss/_grid.scss */
+  .small-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 1074, ../scss/_grid.scss */
+  .small-block-grid-4 > li:nth-child(4n+1) {
+    padding-left: 0em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1077, ../scss/_grid.scss */
+  .small-block-grid-4 > li:nth-child(4n+2) {
+    padding-left: 0.46875em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1080, ../scss/_grid.scss */
+  .small-block-grid-4 > li:nth-child(4n+3) {
+    padding-left: 0.9375em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1083, ../scss/_grid.scss */
+  .small-block-grid-4 > li:nth-child(4n) {
+    padding-left: 1.40625em;
+    padding-right: 0em;
+  }
+
+  /* line 1087, ../scss/_grid.scss */
+  .small-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 1090, ../scss/_grid.scss */
+  .small-block-grid-5 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1092, ../scss/_grid.scss */
+  .small-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 1094, ../scss/_grid.scss */
+  .small-block-grid-5 > li:nth-child(5n+1) {
+    padding-left: 0em;
+    padding-right: 1.5em;
+  }
+
+  /* line 1097, ../scss/_grid.scss */
+  .small-block-grid-5 > li:nth-child(5n+2) {
+    padding-left: 0.375em;
+    padding-right: 1.125em;
+  }
+
+  /* line 1100, ../scss/_grid.scss */
+  .small-block-grid-5 > li:nth-child(5n+3) {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+
+  /* line 1103, ../scss/_grid.scss */
+  .small-block-grid-5 > li:nth-child(5n+4) {
+    padding-left: 1.125em;
+    padding-right: 0.375em;
+  }
+
+  /* line 1106, ../scss/_grid.scss */
+  .small-block-grid-5 > li:nth-child(5n) {
+    padding-left: 1.5em;
+    padding-right: 0em;
+  }
+
+  /* line 1110, ../scss/_grid.scss */
+  .small-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+
+  /* line 1113, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1115, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 1117, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-child(6n+1) {
+    padding-left: 0em;
+    padding-right: 1.5625em;
+  }
+
+  /* line 1120, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-child(6n+2) {
+    padding-left: 0.3125em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1123, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-child(6n+3) {
+    padding-left: 0.625em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1126, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-child(6n+4) {
+    padding-left: 0.9375em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1129, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-child(6n+5) {
+    padding-left: 1.25em;
+    padding-right: 0.3125em;
+  }
+
+  /* line 1132, ../scss/_grid.scss */
+  .small-block-grid-6 > li:nth-child(6n) {
+    padding-left: 1.5625em;
+    padding-right: 0em;
+  }
+
+  /* line 1136, ../scss/_grid.scss */
+  .small-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+
+  /* line 1139, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1141, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 1143, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-child(7n+1) {
+    padding-left: 0em;
+    padding-right: 1.60714em;
+  }
+
+  /* line 1146, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-child(7n+2) {
+    padding-left: 0.26786em;
+    padding-right: 1.33929em;
+  }
+
+  /* line 1149, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-child(7n+3) {
+    padding-left: 0.53571em;
+    padding-right: 1.07143em;
+  }
+
+  /* line 1152, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-child(7n+4) {
+    padding-left: 0.80357em;
+    padding-right: 0.80357em;
+  }
+
+  /* line 1155, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-child(7n+5) {
+    padding-left: 1.07143em;
+    padding-right: 0.53571em;
+  }
+
+  /* line 1158, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-child(7n+6) {
+    padding-left: 1.33929em;
+    padding-right: 0.26786em;
+  }
+
+  /* line 1161, ../scss/_grid.scss */
+  .small-block-grid-7 > li:nth-child(7n) {
+    padding-left: 1.60714em;
+    padding-right: 0em;
+  }
+
+  /* line 1165, ../scss/_grid.scss */
+  .small-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+
+  /* line 1168, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1170, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 1172, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n+1) {
+    padding-left: 0em;
+    padding-right: 1.64063em;
+  }
+
+  /* line 1175, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n+2) {
+    padding-left: 0.23438em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1178, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n+3) {
+    padding-left: 0.46875em;
+    padding-right: 1.17188em;
+  }
+
+  /* line 1181, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n+4) {
+    padding-left: 0.70313em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1184, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n+5) {
+    padding-left: 0.9375em;
+    padding-right: 0.70313em;
+  }
+
+  /* line 1187, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n+6) {
+    padding-left: 1.17188em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1190, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n+7) {
+    padding-left: 1.40625em;
+    padding-right: 0.23438em;
+  }
+
+  /* line 1193, ../scss/_grid.scss */
+  .small-block-grid-8 > li:nth-child(8n) {
+    padding-left: 1.64063em;
+    padding-right: 0em;
+  }
+
+  /* line 1197, ../scss/_grid.scss */
+  .small-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+
+  /* line 1200, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1202, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 1204, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+1) {
+    padding-left: 0em;
+    padding-right: 1.66667em;
+  }
+
+  /* line 1207, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+2) {
+    padding-left: 0.20833em;
+    padding-right: 1.45833em;
+  }
+
+  /* line 1210, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+3) {
+    padding-left: 0.41667em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1213, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+4) {
+    padding-left: 0.625em;
+    padding-right: 1.04167em;
+  }
+
+  /* line 1216, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+5) {
+    padding-left: 0.83333em;
+    padding-right: 0.83333em;
+  }
+
+  /* line 1219, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+6) {
+    padding-left: 1.04167em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1222, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+7) {
+    padding-left: 1.25em;
+    padding-right: 0.41667em;
+  }
+
+  /* line 1225, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n+8) {
+    padding-left: 1.45833em;
+    padding-right: 0.20833em;
+  }
+
+  /* line 1228, ../scss/_grid.scss */
+  .small-block-grid-9 > li:nth-child(9n) {
+    padding-left: 1.66667em;
+    padding-right: 0em;
+  }
+
+  /* line 1232, ../scss/_grid.scss */
+  .small-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+
+  /* line 1235, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1237, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 1239, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+1) {
+    padding-left: 0em;
+    padding-right: 1.6875em;
+  }
+
+  /* line 1242, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+2) {
+    padding-left: 0.1875em;
+    padding-right: 1.5em;
+  }
+
+  /* line 1245, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+3) {
+    padding-left: 0.375em;
+    padding-right: 1.3125em;
+  }
+
+  /* line 1248, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+4) {
+    padding-left: 0.5625em;
+    padding-right: 1.125em;
+  }
+
+  /* line 1251, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+5) {
+    padding-left: 0.75em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1254, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+6) {
+    padding-left: 0.9375em;
+    padding-right: 0.75em;
+  }
+
+  /* line 1257, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+7) {
+    padding-left: 1.125em;
+    padding-right: 0.5625em;
+  }
+
+  /* line 1260, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+8) {
+    padding-left: 1.3125em;
+    padding-right: 0.375em;
+  }
+
+  /* line 1263, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n+9) {
+    padding-left: 1.5em;
+    padding-right: 0.1875em;
+  }
+
+  /* line 1266, ../scss/_grid.scss */
+  .small-block-grid-10 > li:nth-child(10n) {
+    padding-left: 1.6875em;
+    padding-right: 0em;
+  }
+
+  /* line 1270, ../scss/_grid.scss */
+  .small-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+
+  /* line 1273, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1275, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 1277, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+1) {
+    padding-left: 0.0em;
+    padding-right: 1.70455em;
+  }
+
+  /* line 1280, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+2) {
+    padding-left: 0.17045em;
+    padding-right: 1.53409em;
+  }
+
+  /* line 1283, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+3) {
+    padding-left: 0.34091em;
+    padding-right: 1.36364em;
+  }
+
+  /* line 1286, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+4) {
+    padding-left: 0.51136em;
+    padding-right: 1.19318em;
+  }
+
+  /* line 1289, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+5) {
+    padding-left: 0.68182em;
+    padding-right: 1.02273em;
+  }
+
+  /* line 1292, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+6) {
+    padding-left: 0.85227em;
+    padding-right: 0.85227em;
+  }
+
+  /* line 1295, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+7) {
+    padding-left: 1.02273em;
+    padding-right: 0.68182em;
+  }
+
+  /* line 1298, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+8) {
+    padding-left: 1.19318em;
+    padding-right: 0.51136em;
+  }
+
+  /* line 1301, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+9) {
+    padding-left: 1.36364em;
+    padding-right: 0.34091em;
+  }
+
+  /* line 1304, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n+10) {
+    padding-left: 1.53409em;
+    padding-right: 0.17045em;
+  }
+
+  /* line 1307, ../scss/_grid.scss */
+  .small-block-grid-11 > li:nth-child(11n) {
+    padding-left: 1.70455em;
+    padding-right: 0.0em;
+  }
+
+  /* line 1311, ../scss/_grid.scss */
+  .small-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+
+  /* line 1314, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1316, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+
+  /* line 1318, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+1) {
+    padding-left: 0em;
+    padding-right: 1.71875em;
+  }
+
+  /* line 1321, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+2) {
+    padding-left: 0.15625em;
+    padding-right: 1.5625em;
+  }
+
+  /* line 1324, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+3) {
+    padding-left: 0.3125em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1327, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+4) {
+    padding-left: 0.46875em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1330, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+5) {
+    padding-left: 0.625em;
+    padding-right: 1.09375em;
+  }
+
+  /* line 1333, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+6) {
+    padding-left: 0.78125em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1336, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+7) {
+    padding-left: 0.9375em;
+    padding-right: 0.78125em;
+  }
+
+  /* line 1339, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+8) {
+    padding-left: 1.09375em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1342, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+9) {
+    padding-left: 1.25em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1345, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+10) {
+    padding-left: 1.40625em;
+    padding-right: 0.3125em;
+  }
+
+  /* line 1348, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n+11) {
+    padding-left: 1.5625em;
+    padding-right: 0.15625em;
+  }
+
+  /* line 1351, ../scss/_grid.scss */
+  .small-block-grid-12 > li:nth-child(12n) {
+    padding-left: 1.71875em;
+    padding-right: 0em;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1355, ../scss/_grid.scss */
+  .medium-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+
+  /* line 1358, ../scss/_grid.scss */
+  .medium-block-grid-1 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1360, ../scss/_grid.scss */
+  .medium-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 1362, ../scss/_grid.scss */
+  .medium-block-grid-1 > li:nth-child(1n) {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  /* line 1366, ../scss/_grid.scss */
+  .medium-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 1369, ../scss/_grid.scss */
+  .medium-block-grid-2 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1371, ../scss/_grid.scss */
+  .medium-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 1373, ../scss/_grid.scss */
+  .medium-block-grid-2 > li:nth-child(2n+1) {
+    padding-left: 0em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1376, ../scss/_grid.scss */
+  .medium-block-grid-2 > li:nth-child(2n) {
+    padding-left: 0.9375em;
+    padding-right: 0em;
+  }
+
+  /* line 1380, ../scss/_grid.scss */
+  .medium-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+
+  /* line 1383, ../scss/_grid.scss */
+  .medium-block-grid-3 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1385, ../scss/_grid.scss */
+  .medium-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 1387, ../scss/_grid.scss */
+  .medium-block-grid-3 > li:nth-child(3n+1) {
+    padding-left: 0em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1390, ../scss/_grid.scss */
+  .medium-block-grid-3 > li:nth-child(3n+2) {
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1393, ../scss/_grid.scss */
+  .medium-block-grid-3 > li:nth-child(3n) {
+    padding-left: 1.25em;
+    padding-right: 0em;
+  }
+
+  /* line 1397, ../scss/_grid.scss */
+  .medium-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+
+  /* line 1400, ../scss/_grid.scss */
+  .medium-block-grid-4 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1402, ../scss/_grid.scss */
+  .medium-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 1404, ../scss/_grid.scss */
+  .medium-block-grid-4 > li:nth-child(4n+1) {
+    padding-left: 0em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1407, ../scss/_grid.scss */
+  .medium-block-grid-4 > li:nth-child(4n+2) {
+    padding-left: 0.46875em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1410, ../scss/_grid.scss */
+  .medium-block-grid-4 > li:nth-child(4n+3) {
+    padding-left: 0.9375em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1413, ../scss/_grid.scss */
+  .medium-block-grid-4 > li:nth-child(4n) {
+    padding-left: 1.40625em;
+    padding-right: 0em;
+  }
+
+  /* line 1417, ../scss/_grid.scss */
+  .medium-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 1420, ../scss/_grid.scss */
+  .medium-block-grid-5 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1422, ../scss/_grid.scss */
+  .medium-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 1424, ../scss/_grid.scss */
+  .medium-block-grid-5 > li:nth-child(5n+1) {
+    padding-left: 0em;
+    padding-right: 1.5em;
+  }
+
+  /* line 1427, ../scss/_grid.scss */
+  .medium-block-grid-5 > li:nth-child(5n+2) {
+    padding-left: 0.375em;
+    padding-right: 1.125em;
+  }
+
+  /* line 1430, ../scss/_grid.scss */
+  .medium-block-grid-5 > li:nth-child(5n+3) {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+
+  /* line 1433, ../scss/_grid.scss */
+  .medium-block-grid-5 > li:nth-child(5n+4) {
+    padding-left: 1.125em;
+    padding-right: 0.375em;
+  }
+
+  /* line 1436, ../scss/_grid.scss */
+  .medium-block-grid-5 > li:nth-child(5n) {
+    padding-left: 1.5em;
+    padding-right: 0em;
+  }
+
+  /* line 1440, ../scss/_grid.scss */
+  .medium-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+
+  /* line 1443, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1445, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 1447, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-child(6n+1) {
+    padding-left: 0em;
+    padding-right: 1.5625em;
+  }
+
+  /* line 1450, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-child(6n+2) {
+    padding-left: 0.3125em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1453, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-child(6n+3) {
+    padding-left: 0.625em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1456, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-child(6n+4) {
+    padding-left: 0.9375em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1459, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-child(6n+5) {
+    padding-left: 1.25em;
+    padding-right: 0.3125em;
+  }
+
+  /* line 1462, ../scss/_grid.scss */
+  .medium-block-grid-6 > li:nth-child(6n) {
+    padding-left: 1.5625em;
+    padding-right: 0em;
+  }
+
+  /* line 1466, ../scss/_grid.scss */
+  .medium-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+
+  /* line 1469, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1471, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 1473, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-child(7n+1) {
+    padding-left: 0em;
+    padding-right: 1.60714em;
+  }
+
+  /* line 1476, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-child(7n+2) {
+    padding-left: 0.26786em;
+    padding-right: 1.33929em;
+  }
+
+  /* line 1479, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-child(7n+3) {
+    padding-left: 0.53571em;
+    padding-right: 1.07143em;
+  }
+
+  /* line 1482, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-child(7n+4) {
+    padding-left: 0.80357em;
+    padding-right: 0.80357em;
+  }
+
+  /* line 1485, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-child(7n+5) {
+    padding-left: 1.07143em;
+    padding-right: 0.53571em;
+  }
+
+  /* line 1488, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-child(7n+6) {
+    padding-left: 1.33929em;
+    padding-right: 0.26786em;
+  }
+
+  /* line 1491, ../scss/_grid.scss */
+  .medium-block-grid-7 > li:nth-child(7n) {
+    padding-left: 1.60714em;
+    padding-right: 0em;
+  }
+
+  /* line 1495, ../scss/_grid.scss */
+  .medium-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+
+  /* line 1498, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1500, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 1502, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n+1) {
+    padding-left: 0em;
+    padding-right: 1.64063em;
+  }
+
+  /* line 1505, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n+2) {
+    padding-left: 0.23438em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1508, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n+3) {
+    padding-left: 0.46875em;
+    padding-right: 1.17188em;
+  }
+
+  /* line 1511, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n+4) {
+    padding-left: 0.70313em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1514, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n+5) {
+    padding-left: 0.9375em;
+    padding-right: 0.70313em;
+  }
+
+  /* line 1517, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n+6) {
+    padding-left: 1.17188em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1520, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n+7) {
+    padding-left: 1.40625em;
+    padding-right: 0.23438em;
+  }
+
+  /* line 1523, ../scss/_grid.scss */
+  .medium-block-grid-8 > li:nth-child(8n) {
+    padding-left: 1.64063em;
+    padding-right: 0em;
+  }
+
+  /* line 1527, ../scss/_grid.scss */
+  .medium-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+
+  /* line 1530, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1532, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 1534, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+1) {
+    padding-left: 0em;
+    padding-right: 1.66667em;
+  }
+
+  /* line 1537, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+2) {
+    padding-left: 0.20833em;
+    padding-right: 1.45833em;
+  }
+
+  /* line 1540, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+3) {
+    padding-left: 0.41667em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1543, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+4) {
+    padding-left: 0.625em;
+    padding-right: 1.04167em;
+  }
+
+  /* line 1546, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+5) {
+    padding-left: 0.83333em;
+    padding-right: 0.83333em;
+  }
+
+  /* line 1549, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+6) {
+    padding-left: 1.04167em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1552, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+7) {
+    padding-left: 1.25em;
+    padding-right: 0.41667em;
+  }
+
+  /* line 1555, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n+8) {
+    padding-left: 1.45833em;
+    padding-right: 0.20833em;
+  }
+
+  /* line 1558, ../scss/_grid.scss */
+  .medium-block-grid-9 > li:nth-child(9n) {
+    padding-left: 1.66667em;
+    padding-right: 0em;
+  }
+
+  /* line 1562, ../scss/_grid.scss */
+  .medium-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+
+  /* line 1565, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1567, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 1569, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+1) {
+    padding-left: 0em;
+    padding-right: 1.6875em;
+  }
+
+  /* line 1572, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+2) {
+    padding-left: 0.1875em;
+    padding-right: 1.5em;
+  }
+
+  /* line 1575, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+3) {
+    padding-left: 0.375em;
+    padding-right: 1.3125em;
+  }
+
+  /* line 1578, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+4) {
+    padding-left: 0.5625em;
+    padding-right: 1.125em;
+  }
+
+  /* line 1581, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+5) {
+    padding-left: 0.75em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1584, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+6) {
+    padding-left: 0.9375em;
+    padding-right: 0.75em;
+  }
+
+  /* line 1587, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+7) {
+    padding-left: 1.125em;
+    padding-right: 0.5625em;
+  }
+
+  /* line 1590, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+8) {
+    padding-left: 1.3125em;
+    padding-right: 0.375em;
+  }
+
+  /* line 1593, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n+9) {
+    padding-left: 1.5em;
+    padding-right: 0.1875em;
+  }
+
+  /* line 1596, ../scss/_grid.scss */
+  .medium-block-grid-10 > li:nth-child(10n) {
+    padding-left: 1.6875em;
+    padding-right: 0em;
+  }
+
+  /* line 1600, ../scss/_grid.scss */
+  .medium-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+
+  /* line 1603, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1605, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 1607, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+1) {
+    padding-left: 0.0em;
+    padding-right: 1.70455em;
+  }
+
+  /* line 1610, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+2) {
+    padding-left: 0.17045em;
+    padding-right: 1.53409em;
+  }
+
+  /* line 1613, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+3) {
+    padding-left: 0.34091em;
+    padding-right: 1.36364em;
+  }
+
+  /* line 1616, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+4) {
+    padding-left: 0.51136em;
+    padding-right: 1.19318em;
+  }
+
+  /* line 1619, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+5) {
+    padding-left: 0.68182em;
+    padding-right: 1.02273em;
+  }
+
+  /* line 1622, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+6) {
+    padding-left: 0.85227em;
+    padding-right: 0.85227em;
+  }
+
+  /* line 1625, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+7) {
+    padding-left: 1.02273em;
+    padding-right: 0.68182em;
+  }
+
+  /* line 1628, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+8) {
+    padding-left: 1.19318em;
+    padding-right: 0.51136em;
+  }
+
+  /* line 1631, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+9) {
+    padding-left: 1.36364em;
+    padding-right: 0.34091em;
+  }
+
+  /* line 1634, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n+10) {
+    padding-left: 1.53409em;
+    padding-right: 0.17045em;
+  }
+
+  /* line 1637, ../scss/_grid.scss */
+  .medium-block-grid-11 > li:nth-child(11n) {
+    padding-left: 1.70455em;
+    padding-right: 0.0em;
+  }
+
+  /* line 1641, ../scss/_grid.scss */
+  .medium-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+
+  /* line 1644, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1646, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+
+  /* line 1648, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+1) {
+    padding-left: 0em;
+    padding-right: 1.71875em;
+  }
+
+  /* line 1651, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+2) {
+    padding-left: 0.15625em;
+    padding-right: 1.5625em;
+  }
+
+  /* line 1654, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+3) {
+    padding-left: 0.3125em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1657, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+4) {
+    padding-left: 0.46875em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1660, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+5) {
+    padding-left: 0.625em;
+    padding-right: 1.09375em;
+  }
+
+  /* line 1663, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+6) {
+    padding-left: 0.78125em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1666, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+7) {
+    padding-left: 0.9375em;
+    padding-right: 0.78125em;
+  }
+
+  /* line 1669, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+8) {
+    padding-left: 1.09375em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1672, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+9) {
+    padding-left: 1.25em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1675, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+10) {
+    padding-left: 1.40625em;
+    padding-right: 0.3125em;
+  }
+
+  /* line 1678, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n+11) {
+    padding-left: 1.5625em;
+    padding-right: 0.15625em;
+  }
+
+  /* line 1681, ../scss/_grid.scss */
+  .medium-block-grid-12 > li:nth-child(12n) {
+    padding-left: 1.71875em;
+    padding-right: 0em;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 1685, ../scss/_grid.scss */
+  .large-block-grid-1 > li {
+    width: 100%;
+    list-style: none;
+  }
+
+  /* line 1688, ../scss/_grid.scss */
+  .large-block-grid-1 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1690, ../scss/_grid.scss */
+  .large-block-grid-1 > li:nth-of-type(1n+1) {
+    clear: both;
+  }
+
+  /* line 1692, ../scss/_grid.scss */
+  .large-block-grid-1 > li:nth-child(1n) {
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  /* line 1696, ../scss/_grid.scss */
+  .large-block-grid-2 > li {
+    width: 50%;
+    list-style: none;
+  }
+
+  /* line 1699, ../scss/_grid.scss */
+  .large-block-grid-2 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1701, ../scss/_grid.scss */
+  .large-block-grid-2 > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+
+  /* line 1703, ../scss/_grid.scss */
+  .large-block-grid-2 > li:nth-child(2n+1) {
+    padding-left: 0em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1706, ../scss/_grid.scss */
+  .large-block-grid-2 > li:nth-child(2n) {
+    padding-left: 0.9375em;
+    padding-right: 0em;
+  }
+
+  /* line 1710, ../scss/_grid.scss */
+  .large-block-grid-3 > li {
+    width: 33.33333%;
+    list-style: none;
+  }
+
+  /* line 1713, ../scss/_grid.scss */
+  .large-block-grid-3 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1715, ../scss/_grid.scss */
+  .large-block-grid-3 > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+
+  /* line 1717, ../scss/_grid.scss */
+  .large-block-grid-3 > li:nth-child(3n+1) {
+    padding-left: 0em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1720, ../scss/_grid.scss */
+  .large-block-grid-3 > li:nth-child(3n+2) {
+    padding-left: 0.625em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1723, ../scss/_grid.scss */
+  .large-block-grid-3 > li:nth-child(3n) {
+    padding-left: 1.25em;
+    padding-right: 0em;
+  }
+
+  /* line 1727, ../scss/_grid.scss */
+  .large-block-grid-4 > li {
+    width: 25%;
+    list-style: none;
+  }
+
+  /* line 1730, ../scss/_grid.scss */
+  .large-block-grid-4 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1732, ../scss/_grid.scss */
+  .large-block-grid-4 > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+
+  /* line 1734, ../scss/_grid.scss */
+  .large-block-grid-4 > li:nth-child(4n+1) {
+    padding-left: 0em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1737, ../scss/_grid.scss */
+  .large-block-grid-4 > li:nth-child(4n+2) {
+    padding-left: 0.46875em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1740, ../scss/_grid.scss */
+  .large-block-grid-4 > li:nth-child(4n+3) {
+    padding-left: 0.9375em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1743, ../scss/_grid.scss */
+  .large-block-grid-4 > li:nth-child(4n) {
+    padding-left: 1.40625em;
+    padding-right: 0em;
+  }
+
+  /* line 1747, ../scss/_grid.scss */
+  .large-block-grid-5 > li {
+    width: 20%;
+    list-style: none;
+  }
+
+  /* line 1750, ../scss/_grid.scss */
+  .large-block-grid-5 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1752, ../scss/_grid.scss */
+  .large-block-grid-5 > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+
+  /* line 1754, ../scss/_grid.scss */
+  .large-block-grid-5 > li:nth-child(5n+1) {
+    padding-left: 0em;
+    padding-right: 1.5em;
+  }
+
+  /* line 1757, ../scss/_grid.scss */
+  .large-block-grid-5 > li:nth-child(5n+2) {
+    padding-left: 0.375em;
+    padding-right: 1.125em;
+  }
+
+  /* line 1760, ../scss/_grid.scss */
+  .large-block-grid-5 > li:nth-child(5n+3) {
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+
+  /* line 1763, ../scss/_grid.scss */
+  .large-block-grid-5 > li:nth-child(5n+4) {
+    padding-left: 1.125em;
+    padding-right: 0.375em;
+  }
+
+  /* line 1766, ../scss/_grid.scss */
+  .large-block-grid-5 > li:nth-child(5n) {
+    padding-left: 1.5em;
+    padding-right: 0em;
+  }
+
+  /* line 1770, ../scss/_grid.scss */
+  .large-block-grid-6 > li {
+    width: 16.66667%;
+    list-style: none;
+  }
+
+  /* line 1773, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1775, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+
+  /* line 1777, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-child(6n+1) {
+    padding-left: 0em;
+    padding-right: 1.5625em;
+  }
+
+  /* line 1780, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-child(6n+2) {
+    padding-left: 0.3125em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1783, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-child(6n+3) {
+    padding-left: 0.625em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1786, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-child(6n+4) {
+    padding-left: 0.9375em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1789, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-child(6n+5) {
+    padding-left: 1.25em;
+    padding-right: 0.3125em;
+  }
+
+  /* line 1792, ../scss/_grid.scss */
+  .large-block-grid-6 > li:nth-child(6n) {
+    padding-left: 1.5625em;
+    padding-right: 0em;
+  }
+
+  /* line 1796, ../scss/_grid.scss */
+  .large-block-grid-7 > li {
+    width: 14.28571%;
+    list-style: none;
+  }
+
+  /* line 1799, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1801, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+
+  /* line 1803, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-child(7n+1) {
+    padding-left: 0em;
+    padding-right: 1.60714em;
+  }
+
+  /* line 1806, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-child(7n+2) {
+    padding-left: 0.26786em;
+    padding-right: 1.33929em;
+  }
+
+  /* line 1809, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-child(7n+3) {
+    padding-left: 0.53571em;
+    padding-right: 1.07143em;
+  }
+
+  /* line 1812, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-child(7n+4) {
+    padding-left: 0.80357em;
+    padding-right: 0.80357em;
+  }
+
+  /* line 1815, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-child(7n+5) {
+    padding-left: 1.07143em;
+    padding-right: 0.53571em;
+  }
+
+  /* line 1818, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-child(7n+6) {
+    padding-left: 1.33929em;
+    padding-right: 0.26786em;
+  }
+
+  /* line 1821, ../scss/_grid.scss */
+  .large-block-grid-7 > li:nth-child(7n) {
+    padding-left: 1.60714em;
+    padding-right: 0em;
+  }
+
+  /* line 1825, ../scss/_grid.scss */
+  .large-block-grid-8 > li {
+    width: 12.5%;
+    list-style: none;
+  }
+
+  /* line 1828, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1830, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+
+  /* line 1832, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n+1) {
+    padding-left: 0em;
+    padding-right: 1.64063em;
+  }
+
+  /* line 1835, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n+2) {
+    padding-left: 0.23438em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1838, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n+3) {
+    padding-left: 0.46875em;
+    padding-right: 1.17188em;
+  }
+
+  /* line 1841, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n+4) {
+    padding-left: 0.70313em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1844, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n+5) {
+    padding-left: 0.9375em;
+    padding-right: 0.70313em;
+  }
+
+  /* line 1847, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n+6) {
+    padding-left: 1.17188em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 1850, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n+7) {
+    padding-left: 1.40625em;
+    padding-right: 0.23438em;
+  }
+
+  /* line 1853, ../scss/_grid.scss */
+  .large-block-grid-8 > li:nth-child(8n) {
+    padding-left: 1.64063em;
+    padding-right: 0em;
+  }
+
+  /* line 1857, ../scss/_grid.scss */
+  .large-block-grid-9 > li {
+    width: 11.11111%;
+    list-style: none;
+  }
+
+  /* line 1860, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1862, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+
+  /* line 1864, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+1) {
+    padding-left: 0em;
+    padding-right: 1.66667em;
+  }
+
+  /* line 1867, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+2) {
+    padding-left: 0.20833em;
+    padding-right: 1.45833em;
+  }
+
+  /* line 1870, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+3) {
+    padding-left: 0.41667em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1873, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+4) {
+    padding-left: 0.625em;
+    padding-right: 1.04167em;
+  }
+
+  /* line 1876, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+5) {
+    padding-left: 0.83333em;
+    padding-right: 0.83333em;
+  }
+
+  /* line 1879, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+6) {
+    padding-left: 1.04167em;
+    padding-right: 0.625em;
+  }
+
+  /* line 1882, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+7) {
+    padding-left: 1.25em;
+    padding-right: 0.41667em;
+  }
+
+  /* line 1885, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n+8) {
+    padding-left: 1.45833em;
+    padding-right: 0.20833em;
+  }
+
+  /* line 1888, ../scss/_grid.scss */
+  .large-block-grid-9 > li:nth-child(9n) {
+    padding-left: 1.66667em;
+    padding-right: 0em;
+  }
+
+  /* line 1892, ../scss/_grid.scss */
+  .large-block-grid-10 > li {
+    width: 10%;
+    list-style: none;
+  }
+
+  /* line 1895, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1897, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+
+  /* line 1899, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+1) {
+    padding-left: 0em;
+    padding-right: 1.6875em;
+  }
+
+  /* line 1902, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+2) {
+    padding-left: 0.1875em;
+    padding-right: 1.5em;
+  }
+
+  /* line 1905, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+3) {
+    padding-left: 0.375em;
+    padding-right: 1.3125em;
+  }
+
+  /* line 1908, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+4) {
+    padding-left: 0.5625em;
+    padding-right: 1.125em;
+  }
+
+  /* line 1911, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+5) {
+    padding-left: 0.75em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1914, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+6) {
+    padding-left: 0.9375em;
+    padding-right: 0.75em;
+  }
+
+  /* line 1917, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+7) {
+    padding-left: 1.125em;
+    padding-right: 0.5625em;
+  }
+
+  /* line 1920, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+8) {
+    padding-left: 1.3125em;
+    padding-right: 0.375em;
+  }
+
+  /* line 1923, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n+9) {
+    padding-left: 1.5em;
+    padding-right: 0.1875em;
+  }
+
+  /* line 1926, ../scss/_grid.scss */
+  .large-block-grid-10 > li:nth-child(10n) {
+    padding-left: 1.6875em;
+    padding-right: 0em;
+  }
+
+  /* line 1930, ../scss/_grid.scss */
+  .large-block-grid-11 > li {
+    width: 9.09091%;
+    list-style: none;
+  }
+
+  /* line 1933, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1935, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+
+  /* line 1937, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+1) {
+    padding-left: 0.0em;
+    padding-right: 1.70455em;
+  }
+
+  /* line 1940, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+2) {
+    padding-left: 0.17045em;
+    padding-right: 1.53409em;
+  }
+
+  /* line 1943, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+3) {
+    padding-left: 0.34091em;
+    padding-right: 1.36364em;
+  }
+
+  /* line 1946, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+4) {
+    padding-left: 0.51136em;
+    padding-right: 1.19318em;
+  }
+
+  /* line 1949, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+5) {
+    padding-left: 0.68182em;
+    padding-right: 1.02273em;
+  }
+
+  /* line 1952, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+6) {
+    padding-left: 0.85227em;
+    padding-right: 0.85227em;
+  }
+
+  /* line 1955, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+7) {
+    padding-left: 1.02273em;
+    padding-right: 0.68182em;
+  }
+
+  /* line 1958, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+8) {
+    padding-left: 1.19318em;
+    padding-right: 0.51136em;
+  }
+
+  /* line 1961, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+9) {
+    padding-left: 1.36364em;
+    padding-right: 0.34091em;
+  }
+
+  /* line 1964, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n+10) {
+    padding-left: 1.53409em;
+    padding-right: 0.17045em;
+  }
+
+  /* line 1967, ../scss/_grid.scss */
+  .large-block-grid-11 > li:nth-child(11n) {
+    padding-left: 1.70455em;
+    padding-right: 0.0em;
+  }
+
+  /* line 1971, ../scss/_grid.scss */
+  .large-block-grid-12 > li {
+    width: 8.33333%;
+    list-style: none;
+  }
+
+  /* line 1974, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-of-type(n) {
+    clear: none;
+  }
+
+  /* line 1976, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+
+  /* line 1978, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+1) {
+    padding-left: 0em;
+    padding-right: 1.71875em;
+  }
+
+  /* line 1981, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+2) {
+    padding-left: 0.15625em;
+    padding-right: 1.5625em;
+  }
+
+  /* line 1984, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+3) {
+    padding-left: 0.3125em;
+    padding-right: 1.40625em;
+  }
+
+  /* line 1987, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+4) {
+    padding-left: 0.46875em;
+    padding-right: 1.25em;
+  }
+
+  /* line 1990, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+5) {
+    padding-left: 0.625em;
+    padding-right: 1.09375em;
+  }
+
+  /* line 1993, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+6) {
+    padding-left: 0.78125em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 1996, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+7) {
+    padding-left: 0.9375em;
+    padding-right: 0.78125em;
+  }
+
+  /* line 1999, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+8) {
+    padding-left: 1.09375em;
+    padding-right: 0.625em;
+  }
+
+  /* line 2002, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+9) {
+    padding-left: 1.25em;
+    padding-right: 0.46875em;
+  }
+
+  /* line 2005, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+10) {
+    padding-left: 1.40625em;
+    padding-right: 0.3125em;
+  }
+
+  /* line 2008, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n+11) {
+    padding-left: 1.5625em;
+    padding-right: 0.15625em;
+  }
+
+  /* line 2011, ../scss/_grid.scss */
+  .large-block-grid-12 > li:nth-child(12n) {
+    padding-left: 1.71875em;
+    padding-right: 0em;
+  }
+}
 /* line 1, ../scss/_typography.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: 'Open Sans', sans-serif;
   text-rendering: optimizelegibility;
   font-weight: 900;
   margin-top: 0;
-  text-transform: uppercase;
 }
-/* line 8, ../scss/_typography.scss */
+/* line 7, ../scss/_typography.scss */
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
   text-decoration: none;
 }
 
-/* line 13, ../scss/_typography.scss */
+/* line 12, ../scss/_typography.scss */
 h1, .h1 {
   color: #217d00;
   font-size: 2.5em;
   line-height: 1.333em;
 }
+/* line 17, ../scss/_typography.scss */
+h1.title-bar, .h1.title-bar {
+  background: #217d00;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+}
 
-/* line 19, ../scss/_typography.scss */
+/* line 29, ../scss/_typography.scss */
 h2, .h2 {
   color: #217d00;
   font-size: 24px;
@@ -1138,58 +4578,60 @@ h2, .h2 {
   text-align: center;
 }
 
-/* line 28, ../scss/_typography.scss */
+/* line 38, ../scss/_typography.scss */
 h3, .h3 {
   color: #5a351d;
   font-size: 18px;
 }
 
-/* line 33, ../scss/_typography.scss */
+/* line 43, ../scss/_typography.scss */
 h4, .h4 {
-  color: #5a351d;
-  font-size: 14px;
+  color: #217d00;
+  font-size: 16px;
+  font-weight: 100;
 }
 
-/* line 38, ../scss/_typography.scss */
+/* line 49, ../scss/_typography.scss */
 h5, .h5 {
   color: #217d00;
   font-size: 14;
   line-height: 2.09em;
   letter-spacing: 2px;
-  text-transform: none;
+  text-transform: uppercase;
 }
 
-/* line 46, ../scss/_typography.scss */
+/* line 57, ../scss/_typography.scss */
 a, a:visited {
   color: #217d00;
   /* mobile tap color */
 }
-/* line 49, ../scss/_typography.scss */
+/* line 60, ../scss/_typography.scss */
 a:hover, a:focus, a:visited:hover, a:visited:focus {
   color: #2eb000;
 }
-/* line 53, ../scss/_typography.scss */
+/* line 64, ../scss/_typography.scss */
 a:active, a:visited:active {
   color: #144a00;
 }
-/* line 58, ../scss/_typography.scss */
+/* line 69, ../scss/_typography.scss */
 a:link, a:visited:link {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 64, ../scss/_typography.scss */
+/* line 74, ../scss/_typography.scss */
 p {
   font-size: 14px;
   font-weight: 100;
   line-height: 1.5em;
+  margin: 0 0 15px;
 }
-/* line 69, ../scss/_typography.scss */
+/* line 80, ../scss/_typography.scss */
 p.subtitle {
   font-size: 18px;
   text-align: center;
 }
 
-/* line 75, ../scss/_typography.scss */
+/* line 86, ../scss/_typography.scss */
 hr {
   background: #e3e3e3;
   border: none;
@@ -1649,23 +5091,42 @@ form input[type=url] {
   margin: 0 auto !important;
 }
 
+/* line 1, ../scss/_focus.scss */
+.focus {
+  margin: 0 0 35px;
+}
+/* line 4, ../scss/_focus.scss */
+.focus img {
+  width: 100%;
+}
+
+/* line 9, ../scss/_focus.scss */
+.slider {
+  border: none;
+}
+
 /* line 1, ../scss/_content.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 5, ../scss/_content.scss */
 .content-secondary {
   background: #5a351d;
   border-radius: 5px;
   padding: 20px;
   text-shadow: none;
 }
-/* line 7, ../scss/_content.scss */
+/* line 11, ../scss/_content.scss */
 .content-secondary h1, .content-secondary h2, .content-secondary h3, .content-secondary h4, .content-secondary h5 {
   color: #fff;
 }
-/* line 8, ../scss/_content.scss */
+/* line 12, ../scss/_content.scss */
 .content-secondary p {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 11, ../scss/_content.scss */
+/* line 15, ../scss/_content.scss */
 .author-bio {
   background: #eee;
   border-radius: 4px;
@@ -1675,7 +5136,7 @@ form input[type=url] {
   padding: 25px 25px 25px 130px;
   position: relative;
 }
-/* line 20, ../scss/_content.scss */
+/* line 24, ../scss/_content.scss */
 .author-bio .avatar {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1685,65 +5146,65 @@ form input[type=url] {
   top: 25px;
   left: 25px;
 }
-/* line 29, ../scss/_content.scss */
+/* line 33, ../scss/_content.scss */
 .author-bio .title {
   display: inline-block;
   font-size: 22px;
   font-weight: bold;
   margin: 0 5px 5px 0;
 }
-/* line 36, ../scss/_content.scss */
+/* line 40, ../scss/_content.scss */
 .author-bio .social {
   display: inline-block;
   margin: 0 0 10px;
 }
-/* line 40, ../scss/_content.scss */
+/* line 44, ../scss/_content.scss */
 .author-bio .social li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 44, ../scss/_content.scss */
+/* line 48, ../scss/_content.scss */
 .author-bio .social li .icon {
   line-height: 1em;
   margin-top: 0;
 }
-/* line 51, ../scss/_content.scss */
+/* line 55, ../scss/_content.scss */
 .author-bio .bio {
   margin: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 11, ../scss/_content.scss */
+  /* line 15, ../scss/_content.scss */
   .author-bio {
     text-align: center;
     padding-left: 25px;
   }
-  /* line 59, ../scss/_content.scss */
+  /* line 63, ../scss/_content.scss */
   .author-bio .avatar {
     position: relative;
     top: auto;
     left: auto;
     margin: 0 auto 15px;
   }
-  /* line 65, ../scss/_content.scss */
+  /* line 69, ../scss/_content.scss */
   .author-bio .title {
     display: block;
   }
-  /* line 69, ../scss/_content.scss */
+  /* line 73, ../scss/_content.scss */
   .author-bio .social {
     display: block;
   }
-  /* line 72, ../scss/_content.scss */
+  /* line 76, ../scss/_content.scss */
   .author-bio .social .icon {
     font-size: 46px;
   }
 }
 
-/* line 79, ../scss/_content.scss */
+/* line 83, ../scss/_content.scss */
 #content {
   margin-top: 2.2em;
 }
 
-/* line 85, ../scss/_content.scss */
+/* line 89, ../scss/_content.scss */
 .hentry header {
   font-size: 14px;
   text-align: center;
@@ -1751,108 +5212,103 @@ form input[type=url] {
 
 /* end .hentry */
 /* entry content */
-/* line 97, ../scss/_content.scss */
+/* line 101, ../scss/_content.scss */
 .entry-content blockquote {
   font-style: italic;
   font-size: 22px;
 }
-/* line 102, ../scss/_content.scss */
+/* line 106, ../scss/_content.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 109, ../scss/_content.scss */
+/* line 113, ../scss/_content.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 115, ../scss/_content.scss */
+/* line 119, ../scss/_content.scss */
 .entry-content video, .entry-content object {
   max-width: 100%;
   height: auto;
 }
-/* line 120, ../scss/_content.scss */
+/* line 124, ../scss/_content.scss */
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
   padding: 10px;
 }
 
-/* line 127, ../scss/_content.scss */
+/* line 131, ../scss/_content.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 133, ../scss/_content.scss */
+/* line 137, ../scss/_content.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 139, ../scss/_content.scss */
+/* line 143, ../scss/_content.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
   text-align: center;
 }
 
-/* line 147, ../scss/_content.scss */
-.slider {
-  border: none;
-}
-
-/* line 152, ../scss/_content.scss */
+/* line 151, ../scss/_content.scss */
 .events {
   padding-bottom: 60px;
   text-align: center;
 }
-/* line 156, ../scss/_content.scss */
+/* line 155, ../scss/_content.scss */
 .events h2 {
   margin: 35px 0 45px;
 }
-/* line 157, ../scss/_content.scss */
+/* line 156, ../scss/_content.scss */
 .events img {
   margin: 0 0 25px;
 }
 
-/* line 161, ../scss/_content.scss */
+/* line 160, ../scss/_content.scss */
 .upcoming-events {
   background: #5a351d;
   color: #fff;
   padding: 35px 0;
 }
-/* line 166, ../scss/_content.scss */
+/* line 165, ../scss/_content.scss */
 .upcoming-events .wrap > h2 {
   margin: 15px 0 45px;
 }
-/* line 169, ../scss/_content.scss */
+/* line 168, ../scss/_content.scss */
 .upcoming-events .event h2 {
   margin: 20px 0 25px;
   text-align: left;
 }
-/* line 173, ../scss/_content.scss */
+/* line 172, ../scss/_content.scss */
 .upcoming-events .event h2 a {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.25em;
 }
-/* line 181, ../scss/_content.scss */
+/* line 180, ../scss/_content.scss */
 .upcoming-events .event h3 {
   color: #e8c34f;
   margin: 0;
 }
-/* line 186, ../scss/_content.scss */
+/* line 185, ../scss/_content.scss */
 .upcoming-events .event h4 {
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
 }
-/* line 191, ../scss/_content.scss */
+/* line 190, ../scss/_content.scss */
 .upcoming-events .event .map {
   background-size: cover;
   background-position: center center;
@@ -1864,42 +5320,42 @@ form input[type=url] {
   border-radius: 4px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25) inset;
 }
-/* line 204, ../scss/_content.scss */
+/* line 203, ../scss/_content.scss */
 .upcoming-events .event .button.hollow {
   display: inline-block;
 }
-/* line 207, ../scss/_content.scss */
+/* line 206, ../scss/_content.scss */
 .upcoming-events .more-events {
   color: #fff;
   font-weight: bold;
   margin: 30px 0 0;
   text-align: center;
 }
-/* line 213, ../scss/_content.scss */
+/* line 212, ../scss/_content.scss */
 .upcoming-events .more-events a {
   color: #e8c34f;
 }
 
-/* line 218, ../scss/_content.scss */
+/* line 217, ../scss/_content.scss */
 .news {
   padding: 35px 0;
 }
-/* line 221, ../scss/_content.scss */
+/* line 220, ../scss/_content.scss */
 .news h3 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 3px;
 }
-/* line 227, ../scss/_content.scss */
+/* line 226, ../scss/_content.scss */
 .news .post-meta {
   font-size: .75em;
   margin-top: 0;
 }
-/* line 232, ../scss/_content.scss */
+/* line 231, ../scss/_content.scss */
 .news .post-excerpt {
   font-size: .95em;
 }
-/* line 236, ../scss/_content.scss */
+/* line 235, ../scss/_content.scss */
 .news .excerpt-read-more {
   margin-top: 20px;
   background-image: -webkit-linear-gradient(top, #299c00, #217d00);
@@ -1936,24 +5392,24 @@ form input[type=url] {
   background-image: linear-gradient(to bottom, #289700, #1a6300);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
 }
-/* line 242, ../scss/_content.scss */
+/* line 241, ../scss/_content.scss */
 .news .twitter {
   margin-top: 25px;
 }
 
-/* line 249, ../scss/_content.scss */
+/* line 248, ../scss/_content.scss */
 .newsletter h4 {
   margin: 0;
 }
-/* line 251, ../scss/_content.scss */
+/* line 250, ../scss/_content.scss */
 .newsletter form {
   margin: 0;
 }
-/* line 254, ../scss/_content.scss */
+/* line 253, ../scss/_content.scss */
 .newsletter form div {
   position: relative;
 }
-/* line 258, ../scss/_content.scss */
+/* line 257, ../scss/_content.scss */
 .newsletter form input[type="email"] {
   background: #fff;
   border: none !important;
@@ -1961,7 +5417,7 @@ form input[type=url] {
   max-width: none;
   padding: 13px 12px;
 }
-/* line 266, ../scss/_content.scss */
+/* line 265, ../scss/_content.scss */
 .newsletter form .button {
   display: inline-block;
   font-size: 13px;
@@ -1971,7 +5427,7 @@ form input[type=url] {
   top: 5px;
 }
 
-/* line 278, ../scss/_content.scss */
+/* line 277, ../scss/_content.scss */
 .sponsors {
   background: #eee;
   border-top: 1px solid #d5d5d5;
@@ -1980,31 +5436,52 @@ form input[type=url] {
   padding: 35px 0 45px;
   text-shadow: 0 1px 0 #fff;
 }
-/* line 282, ../scss/_content.scss */
+/* line 281, ../scss/_content.scss */
 .sponsors .sponsor h3 {
   text-align: center;
 }
-/* line 286, ../scss/_content.scss */
+/* line 285, ../scss/_content.scss */
 .sponsors .sponsor .logo {
   min-height: 125px;
   text-align: center;
 }
-/* line 290, ../scss/_content.scss */
+/* line 289, ../scss/_content.scss */
 .sponsors .sponsor .logo img {
   max-width: 100%;
 }
 
-/* line 298, ../scss/_content.scss */
+/* line 297, ../scss/_content.scss */
 .about {
   margin-bottom: 45px;
 }
-/* line 301, ../scss/_content.scss */
+/* line 300, ../scss/_content.scss */
 .about .content p {
   color: #217d00;
   font-size: 24px;
 }
 
-/* line 308, ../scss/_content.scss */
+/* line 306, ../scss/_content.scss */
+.team-member {
+  margin: 20px 0;
+  text-align: center;
+}
+/* line 310, ../scss/_content.scss */
+.team-member .avatar {
+  border-radius: 50%;
+  margin: 0 0 15px;
+  width: 70%;
+}
+/* line 316, ../scss/_content.scss */
+.team-member h4 {
+  margin: 0;
+}
+/* line 320, ../scss/_content.scss */
+.team-member h6 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 327, ../scss/_content.scss */
 .contact {
   padding: 35px 0 0;
 }

@@ -1,14 +1,7 @@
 <?php get_header(); ?>
 
-	<div id="slider" class="slider flexslider">
-		<ul class="slides">
-			<li>
-				<img src="http://placehold.it/1200x450" alt="">
-			</li>
-			<li>
-				<img src="http://placehold.it/1200x450?text=Hello+Slide+2" alt="">
-			</li>
-		</ul>
+	<div class="focus">
+		<img src="<?php echo get_template_directory_uri(); ?>/library/images/slider/welcome.jpg" alt="">
 	</div>
 
 	<div id="content">
@@ -18,7 +11,7 @@
 
 				<div class="clearfix">
 					<div class="content eightcol first">
-						<h4><?php echo $post->post_title; ?></h4>
+						<h3>What is Digital Fertilizer?</h3>
 						<?php echo wpautop( $post->post_content ); ?>
 					</div>
 

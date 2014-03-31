@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+}
+
 .content-secondary {
   background: $secondary-color;
   border-radius: 5px;
@@ -141,11 +145,6 @@
       margin: 4px 0 7px;
       text-align: center;
     }
-  }
-
-  // Slider
-  .slider {
-    border: none;
   }
 
   // Events
@@ -301,6 +300,26 @@
     .content p {
       color: $primary-color;
       font-size: 24px;
+    }
+  }
+
+  .team-member {
+    margin: 20px 0;
+    text-align: center;
+
+    .avatar {
+      border-radius: 50%;
+      margin: 0 0 15px;
+      width: 70%;
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    h6 {
+      margin: 0;
+      text-transform: uppercase;
     }
   }
 

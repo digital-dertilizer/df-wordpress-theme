@@ -5,46 +5,31 @@
 
 get_header(); ?>
 
-			<div id="content">
-				<div id="inner-content" class="wrap clearfix">
-					<div id="main" role="main">
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<header>
+			<h1 class="title-bar"><?php the_title(); ?></h1>
+		</header>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<?php $focus = get_post_meta( get_the_ID(), 'focus' ); ?>
+		<?php if ( ! empty( $focus ) ) : ?>
+			<div class="focus">
+				<img class="focus-image" src="<?php echo $focus[0]; ?>" alt="">
+			</div>
+		<?php endif; ?>
 
-								<header class="article-header">
-									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-								</header> <!-- end article header -->
+		<div class="wrap" id="main" role="main">
+			<article class="hentry clearfix">
+				<?php the_content(); ?>
+			</article>
+		</div>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-								</section> <!-- end article section -->
+	<?php endwhile; else : ?>
 
-								<footer class="article-footer">
-									<?php the_tags('<p class="tags"><span class="tags-title">' . __('Tags:', 'bonestheme') . '</span> ', ', ', '</p>'); ?>
-								</footer> <!-- end article footer -->
+		<article id="post-not-found" class="hentry clearfix">
+			<h2>Sorry, post not found.</h2>
+		</article>
 
-							</article><!-- end article -->
-
-						<?php endwhile; else : ?>
-
-							<article id="post-not-found" class="hentry clearfix">
-								<header class="article-header">
-									<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-								</header>
-								<section class="entry-content">
-									<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-								</section>
-								<footer class="article-footer">
-									<p><?php _e("This is the error message in the single.php template.", "bonestheme"); ?></p>
-								</footer>
-							</article>
-
-						<?php endif; ?>
-
-					</div> <!-- end #main -->
-				</div> <!-- end #inner-content -->
-			</div> <!-- end #content -->
+	<?php endif; ?>
 
 <?php get_footer(); ?>
