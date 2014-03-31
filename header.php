@@ -57,21 +57,19 @@
 
 	<body <?php body_class(); ?>>
 		<div id="container">
-			<?php if ( is_front_page() ) : ?>
-				<div class="nav-container">
-					<div class="clearfix wrap">
-						<a class="logo" href="<?php home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/library/images/logo-green.png" alt=""></a>
-						<a href="#top" id="beam-me-up">Up &uarr;</a>
-						<div class="mobile-toggle-container">
-							<a href="#" class="mobile-toggle" id="mobile-nav-toggle">
-								<span></span>
-								<span></span>
-								<span></span>
-							</a>
-						</div>
-						<nav role="navigation" class="wrap">
-							<?php bones_main_nav(); ?>
-						</nav>
+			<div class="nav-container">
+				<div class="clearfix wrap">
+					<a class="logo" href="<?php home_url(); ?>"><img src="<?php echo get_template_directory_uri() ?>/library/images/logo-green.png" alt=""></a>
+					<a href="#top" id="beam-me-up">Up &uarr;</a>
+					<div class="mobile-toggle-container">
+						<a href="#" class="mobile-toggle" id="mobile-nav-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
 					</div>
+					<nav role="navigation" class="wrap">
+						<?php bones_main_nav(); ?>
+					</nav>
 				</div>
-			<?php endif; ?>
+			</div>

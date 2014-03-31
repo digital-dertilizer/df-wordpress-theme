@@ -1,60 +1,31 @@
 <?php get_header(); ?>
 
-			<div id="content">
+	<header>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	</header>
 
-				<div id="inner-content" class="wrap clearfix">
+	<h1 class="title-bar"><?php the_title(); ?></h1>
 
-						<div id="main" class="eightcol first clearfix" role="main">
+	<?php $focus = get_post_meta( get_the_ID(), 'focus_image' ); ?>
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php if ( $focus ) : ?>
+		<div class="focus">
+			<?php echo $focus; ?>
+		</div>
+	<?php endif; ?>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="wrap" id="main" role="main">
+		<article class="hentry clearfix">
+			<?php the_content(); ?>
+		</article>
+	</div>
 
-								<header class="article-header">
+	<?php endwhile; else : ?>
 
-									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());
-									?></p>
+		<article id="post-not-found" class="hentry clearfix">
+			<h2>Sorry, post not found.</h2>
+		</article>
 
-
-								</header> <!-- end article header -->
-
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-								</section> <!-- end article section -->
-
-								<footer class="article-footer">
-									<?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?>
-
-								</footer> <!-- end article footer -->
-
-								<?php comments_template(); ?>
-
-							</article> <!-- end article -->
-
-							<?php endwhile; else : ?>
-
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e("This is the error message in the page.php template.", "bonestheme"); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
-
-						</div> <!-- end #main -->
-
-						<?php get_sidebar(); ?>
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
+	<?php endif; ?>
 
 <?php get_footer(); ?>

@@ -1,0 +1,75 @@
+.footer {
+  margin-top: 25px;
+
+  .footer-top {
+    background: $primary-color;
+    color: #fff;
+    padding: 25px 0;
+    text-shadow: none;
+
+    h3, h4 {
+      color: #fff;
+    }
+
+    nav {
+      .logo {
+        max-width: 100%;
+        padding-right: 10px;
+      }
+
+      a {
+        color: #fff;
+        display: block;
+        font-weight: 100;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      text-align: center;
+
+      nav {
+        margin: 0 0 20px;
+
+        .logo {
+          margin-bottom: 15px;
+        }
+
+        a {
+          margin: 8px 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    background: #eee;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, .6) inset;
+    color: #333;
+    font-size: .85em;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+  }
+}
+
+// Font Icons
+.icon {
+  display: inline-block;
+  font-family: 'Entypo';
+  font-size: 30px;
+  text-decoration: none;
+
+  @include transition(.3s color);
+
+  &:hover { color: #000 !important; }
+  &.twitter { color: #4099ff; }
+  &.facebook { color: #3B5998; }
+  &.linkedin { color: #007bb6; }
+  &.google { color: #d34836; }
+}
+
+// Twitter Widgets
+.twitter-tweet { margin: 0 auto !important; }

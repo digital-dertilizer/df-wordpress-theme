@@ -1,0 +1,155 @@
+.header {
+  background: url('../images/header-bg.jpg') no-repeat;
+  background-size: cover;
+  height: 676px;
+  padding-top: 36px;
+}
+
+.nav-container {
+  background: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, .35);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  padding: 10px 0;
+
+  #beam-me-up {
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+      top: 25px; right: 25px;
+    text-decoration: none;
+
+    @include transition(opacity .3s);
+
+    &.in {
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 640px) {
+      right: auto;
+      left: 25px;
+    }
+  }
+
+  .logo { float: left; }
+
+  .mobile-toggle-container {
+    background: rgba(255, 255, 255, .5);
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    display: none;
+    height: 50px;
+
+    .mobile-toggle {
+      background: rgba(255, 255, 255, .5);
+      border: 1px solid rgba(255, 255, 255, .5);
+      border-radius: 4px;
+      float: right;
+      margin: 6px;
+      padding: 10px 10px;
+      width: 50px;
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, .2), 0 0 2px rgba(0, 0, 0, .2);
+
+      &:hover {
+        background: rgba(255, 255, 255, .75);
+      }
+
+      &:active {
+        background: rgba(255, 255, 255, .5);
+        box-shadow: 0 0 2px rgba(0, 0, 0, .1) inset;
+      }
+
+      span {
+        background: rgba(0, 0, 0, .3);
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+        margin-bottom: 3px;
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .wrap {
+      background: #fff;
+      margin: 0;
+      padding-top: 50px;
+      position: absolute;
+        left: 0; right: 0; top: -300px;
+      width: 100%;
+      z-index: -1;
+
+      @include transition(.5s all);
+
+      .nav.top-nav {
+        li {
+          display: block;
+          float: none;
+          margin: 0;
+          width: 100%;
+
+          a {
+            display: block;
+            width: 100%;
+
+            &:hover {
+              background: rgba(0, 0, 0, .05);
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      .wrap {
+        top: 0;
+      }
+      .mobile-toggle-container {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+      }
+    }
+
+    .mobile-toggle-container {
+      display: block;
+    }
+  }
+}
+
+.nav.top-nav {
+  border-bottom: 0;
+  float: right;
+  margin: 0;
+  position: relative;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    float: none;
+    line-height: 57px;
+    margin: 0 15px;
+
+    a {
+      color: #a3a2a2;
+      display: block;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0;
+
+      /*
+      remember this is for mobile ONLY, so there's no need
+      to even declare hover styles here, you can do it in
+      the style.scss file where it's relevant. We want to
+      keep this file as small as possible!
+      */
+      &:hover, &:focus {
+        color: #444;
+      }
+    }
+  }
+}

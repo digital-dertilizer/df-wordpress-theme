@@ -1,0 +1,23 @@
+.button {
+  @include button($primary-color);
+
+  &.secondary {
+    @include button($secondary-color);
+  }
+
+  &.hollow {
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    &:active {
+      border-color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
