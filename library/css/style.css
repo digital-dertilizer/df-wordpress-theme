@@ -4833,63 +4833,42 @@ form input[type=url] {
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
+  position: relative;
+  z-index: 10;
 }
-/* line 14, ../scss/_header.scss */
-.nav-container #beam-me-up {
-  font-weight: bold;
-  opacity: 0;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  text-decoration: none;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-/* line 23, ../scss/_header.scss */
-.nav-container #beam-me-up.in {
-  opacity: 1;
-}
-@media screen and (max-width: 640px) {
-  /* line 14, ../scss/_header.scss */
-  .nav-container #beam-me-up {
-    right: auto;
-    left: 25px;
-  }
-}
-/* line 33, ../scss/_header.scss */
+/* line 16, ../scss/_header.scss */
 .nav-container .logo {
   float: left;
 }
-/* line 35, ../scss/_header.scss */
+/* line 18, ../scss/_header.scss */
 .nav-container .mobile-toggle-container {
-  background: rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background: #fff;
   display: none;
-  height: 50px;
+  height: 78px;
+  margin: -14px 0;
+  padding: 14px 0;
 }
-/* line 42, ../scss/_header.scss */
+/* line 25, ../scss/_header.scss */
 .nav-container .mobile-toggle-container .mobile-toggle {
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 4px;
   float: right;
-  margin: 6px;
+  margin: 9px 0;
   padding: 10px 10px;
   width: 50px;
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.2), 0 0 2px rgba(0, 0, 0, 0.2);
 }
-/* line 52, ../scss/_header.scss */
+/* line 35, ../scss/_header.scss */
 .nav-container .mobile-toggle-container .mobile-toggle:hover {
   background: rgba(255, 255, 255, 0.75);
 }
-/* line 56, ../scss/_header.scss */
+/* line 39, ../scss/_header.scss */
 .nav-container .mobile-toggle-container .mobile-toggle:active {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1) inset;
 }
-/* line 61, ../scss/_header.scss */
+/* line 44, ../scss/_header.scss */
 .nav-container .mobile-toggle-container .mobile-toggle span {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 2px;
@@ -4898,18 +4877,18 @@ form input[type=url] {
   margin-bottom: 3px;
   width: 100%;
 }
-/* line 69, ../scss/_header.scss */
+/* line 52, ../scss/_header.scss */
 .nav-container .mobile-toggle-container .mobile-toggle span:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 640px) {
-  /* line 77, ../scss/_header.scss */
-  .nav-container .wrap {
+  /* line 60, ../scss/_header.scss */
+  .nav-container .nav-wrap {
     background: #fff;
-    margin: 0;
-    padding-top: 50px;
-    position: absolute;
     left: 0;
+    margin: 0;
+    padding-top: 0;
+    position: absolute;
     right: 0;
     top: -300px;
     width: 100%;
@@ -4918,37 +4897,41 @@ form input[type=url] {
     -moz-transition: 0.5s all;
     transition: 0.5s all;
   }
-  /* line 89, ../scss/_header.scss */
-  .nav-container .wrap .nav.top-nav li {
+  /* line 73, ../scss/_header.scss */
+  .nav-container .nav-wrap .nav.top-nav {
+    float: none;
+    text-align: left;
+  }
+  /* line 77, ../scss/_header.scss */
+  .nav-container .nav-wrap .nav.top-nav li {
     display: block;
     float: none;
     margin: 0;
     width: 100%;
   }
-  /* line 95, ../scss/_header.scss */
-  .nav-container .wrap .nav.top-nav li a {
+  /* line 83, ../scss/_header.scss */
+  .nav-container .nav-wrap .nav.top-nav li a {
     display: block;
+    line-height: 1em;
+    margin: 0 0 10px;
+    padding: 15px;
     width: 100%;
   }
-  /* line 99, ../scss/_header.scss */
-  .nav-container .wrap .nav.top-nav li a:hover {
+  /* line 90, ../scss/_header.scss */
+  .nav-container .nav-wrap .nav.top-nav li a:hover {
     background: rgba(0, 0, 0, 0.05);
   }
-  /* line 108, ../scss/_header.scss */
-  .nav-container.open .wrap {
-    top: 0;
+  /* line 99, ../scss/_header.scss */
+  .nav-container.open .nav-wrap {
+    top: 65px;
   }
-  /* line 111, ../scss/_header.scss */
-  .nav-container.open .mobile-toggle-container {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  /* line 116, ../scss/_header.scss */
+  /* line 104, ../scss/_header.scss */
   .nav-container .mobile-toggle-container {
     display: block;
   }
 }
 
-/* line 122, ../scss/_header.scss */
+/* line 110, ../scss/_header.scss */
 .nav.top-nav {
   border-bottom: 0;
   float: right;
@@ -4956,14 +4939,14 @@ form input[type=url] {
   position: relative;
   text-align: center;
 }
-/* line 129, ../scss/_header.scss */
+/* line 117, ../scss/_header.scss */
 .nav.top-nav li {
   display: inline-block;
   float: none;
   line-height: 57px;
   margin: 0 15px;
 }
-/* line 135, ../scss/_header.scss */
+/* line 123, ../scss/_header.scss */
 .nav.top-nav li a {
   color: #a3a2a2;
   display: block;
@@ -4979,7 +4962,7 @@ form input[type=url] {
   keep this file as small as possible!
   */
 }
-/* line 150, ../scss/_header.scss */
+/* line 138, ../scss/_header.scss */
 .nav.top-nav li a:hover, .nav.top-nav li a:focus {
   color: #444;
 }

@@ -1,7 +1,7 @@
       <footer class="footer" role="contentinfo">
         <div class="footer-top">
-          <div class="wrap clearfix">
-            <div class="sevencol first">
+          <div class="row">
+            <div class="large-7 columns">
               <h4>Connect With Us</h4>
               <!-- AddThis Button BEGIN -->
               <div class="addthis_toolbox addthis_default_style" style="margin-bottom: 25px;">
@@ -28,19 +28,21 @@
                 </div>
               </nav>
             </div>
-            <div class="newsletter content-secondary fivecol last">
-              <h4>Sign Up To Get The Digital Dirt</h4>
-              <p>Get a monthly recap of past events, upcoming events, job postings, and area startup news!</p>
+            <div class="large-5 columns">
+              <div class="newsletter content-secondary">
+                <h4>Sign Up To Get The Digital Dirt</h4>
+                <p>Get a monthly recap of past events, upcoming events, job postings, and area startup news!</p>
 
-              <form action="http://DigitalFertilizer.us5.list-manage.com/subscribe/post?u=080eab8ec7c6fb04021cf3766&amp;id=9ba679660e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
-                <div style="position: absolute; left: -5000px;">
-                  <input type="text" name="b_080eab8ec7c6fb04021cf3766_9ba679660e" value="">
-                </div>
-                <div>
-                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
-                  <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
-                </div>
-              </form>
+                <form action="http://DigitalFertilizer.us5.list-manage.com/subscribe/post?u=080eab8ec7c6fb04021cf3766&amp;id=9ba679660e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
+                  <div style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_080eab8ec7c6fb04021cf3766_9ba679660e" value="">
+                  </div>
+                  <div>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+                    <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
