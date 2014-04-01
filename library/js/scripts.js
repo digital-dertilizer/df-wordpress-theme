@@ -63,7 +63,8 @@ jQuery(document).ready(function($) {
 	}
 
 	// add all your scripts here
-	$('#menu-main-nav').find('a').add('#beam-me-up').click(function(e) {
+	$('#menu-main-nav').find('a').add('#beam-me-up');
+	$('#beam-me-up').on('click', function(e) {
 		e.preventDefault();
 
 		$('html, body').animate({

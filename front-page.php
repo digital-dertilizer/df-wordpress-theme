@@ -19,11 +19,13 @@
 						<h4>Sign Up To Get The Digital Dirt</h4>
 						<p>Get a monthly recap of past events, upcoming events, job postings, and area startup news!</p>
 
-						<!-- TODO: Setup MailChimp form -->
-						<form action="" class="mailchimp-signup">
+						<form action="http://DigitalFertilizer.us5.list-manage.com/subscribe/post?u=080eab8ec7c6fb04021cf3766&amp;id=9ba679660e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
+							<div style="position: absolute; left: -5000px;">
+								<input type="text" name="b_080eab8ec7c6fb04021cf3766_9ba679660e" value="">
+							</div>
 							<div>
-								<input type="email" placeholder="Email Address">
-								<button type="submit" class="button">Sign Up</button>
+								<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+								<input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
 							</div>
 						</form>
 					</div>
@@ -35,28 +37,20 @@
 
 		<div id="events" class="events">
 			<div class="wrap">
-				<h2>Types of Events</h2>
+				<h2>What Does Digital Fertilizer Do?</h2>
 
-				<div class="clearfix">
-					<div class="threecol first">
-						<img src="<?php echo get_template_directory_uri() ?>/library/images/icon-event-type-seed.png" alt="">
-						<h4>Seed</h4>
-						<p>Designed to help you find direction and define your market, we focus on business formation & planning because you can’t harvest from soil that isn’t seeded correctly.</p>
+				<div class="row">
+					<div class="large-4 columns">
+						<img src="<?php echo get_template_directory_uri() ?>/library/images/icon-connect.png" alt="">
+						<h4>Connect</h4>
 					</div>
-					<div class="threecol">
-						<img src="<?php echo get_template_directory_uri() ?>/library/images/icon-event-type-fertilize.png" alt="">
-						<h4>Fertilize</h4>
-						<p>Helping to educate you on the top in tech and get the right people involved to execute your vision is the boost you need to go from a plan to validating and creating your MVP.</p>
+					<div class="large-4 columns">
+						<img src="<?php echo get_template_directory_uri() ?>/library/images/icon-engage.png" alt="">
+						<h4>Engage</h4>
 					</div>
-					<div class="threecol">
-						<img src="<?php echo get_template_directory_uri() ?>/library/images/icon-event-type-grow.png" alt="">
-						<h4>Grow</h4>
-						<p>Our vision to ultimately help you grow into the company you want to be, is a co-working space that surrounds you with the right resources, events, and motivational people.</p>
-					</div>
-					<div class="threecol last">
-						<img src="<?php echo get_template_directory_uri() ?>/library/images/icon-event-type-harvest.png" alt="">
-						<h4>Harvest</h4>
-						<p>When it’s time to Harvest, It’s show time! Turn down the lights and help your company secure funding to scale faster, or possibly even exit by means of an outright sale.</p>
+					<div class="large-4 columns">
+						<img src="<?php echo get_template_directory_uri() ?>/library/images/icon-empower.png" alt="">
+						<h4>Empower</h4>
 					</div>
 				</div>
 			</div>

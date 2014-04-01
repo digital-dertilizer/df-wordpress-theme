@@ -18,17 +18,13 @@
                   <img class="logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" alt="Digital Fertilizer">
                 </div>
                 <div class="threecol">
-                  <a href="">Resources</a>
-                  <a href="">Job Board</a>
-                  <a href="">Sponsorships</a>
+                  <a href="/about-us">About</a>
                 </div>
                 <div class="threecol">
-                  <a href="">About</a>
-                  <a href="">Events</a>
+                  <a href="/news">Latest News</a>
                 </div>
                 <div class="threecol last">
-                  <a href="">Contact</a>
-                  <a href="">Blog</a>
+                  <a href="/contact">Contact</a>
                 </div>
               </nav>
             </div>
@@ -36,11 +32,13 @@
               <h4>Sign Up To Get The Digital Dirt</h4>
               <p>Get a monthly recap of past events, upcoming events, job postings, and area startup news!</p>
 
-              <!-- TODO: Setup MailChimp form -->
-              <form action="" class="mailchimp-signup">
+              <form action="http://DigitalFertilizer.us5.list-manage.com/subscribe/post?u=080eab8ec7c6fb04021cf3766&amp;id=9ba679660e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailchimp-signup" target="_blank" novalidate>
+                <div style="position: absolute; left: -5000px;">
+                  <input type="text" name="b_080eab8ec7c6fb04021cf3766_9ba679660e" value="">
+                </div>
                 <div>
-                  <input type="email" placeholder="Email Address">
-                  <button type="submit" class="button">Sign Up</button>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+                  <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
               </form>
             </div>

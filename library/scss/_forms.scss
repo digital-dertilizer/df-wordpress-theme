@@ -62,29 +62,16 @@
     height: 150px;
   }
 
+  .button, input[type="submit"] {
+    @extend .button;
+  }
+
+  // Overrides
+  input[type=text], input[type=email], input[type=url], input[type=text], input[type=email], input[type=url] {
+    max-width: none;
+  }
+
+  .ginput_complex .ginput_right input[type=text], .ginput_complex .ginput_right input[type=url], .ginput_complex .ginput_right input[type=email], .ginput_complex .ginput_right input[type=tel], .ginput_complex .ginput_right input[type=number], .ginput_complex .ginput_right input[type=password], .ginput_complex .ginput_right select {
+    width: 100% !important;
+  }
 }
-  /* comment submit button */
-  #submit {}
-
-  /* comment form title */
-  #comment-form-title {
-    margin: 0 0 1.1em;
-  }
-
-  /* cancel comment reply link */
-  #cancel-comment-reply {
-    a {}
-  }
-
-  /* logged in comments */
-  .comments-logged-in-as {}
-
-  /* allowed tags */
-  #allowed_tags {
-    margin: 1.5em 10px 0.7335em 0;
-  }
-
-  /* no comments */
-  .nocomments {
-    margin: 0 20px 1.1em;
-  }

@@ -85,15 +85,34 @@ img {
 }
 
   .hentry {
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 30px;
+    padding-bottom: 15px;
 
-    header {
-      font-size: 14px;
-      text-align: center;
+    &:last-of-type {
+      border-bottom: none;
+      margin: 0;
     }
 
-    footer {}
+    .excerpt-read-more {
+      display: inline-block !important;
+      font-weight: bold;
+      margin-top: 20px;
 
-  } /* end .hentry */
+      @include button($primary-color);
+    }
+
+    header {
+      h2, .h2 {
+        margin: 0 0 3px;
+      }
+
+      .byline {
+        font-size: 0.9em;
+        font-style: italic;
+      }
+    }
+  }
 
   /* entry content */
   .entry-content {
@@ -232,12 +251,6 @@ img {
       font-size: .95em;
     }
 
-    .excerpt-read-more {
-      margin-top: 20px;
-
-      @include button($primary-color);
-    }
-
     .twitter {
       margin-top: 25px;
     }
@@ -259,7 +272,7 @@ img {
         border: none !important;
         border-radius: 3px;
         max-width: none;
-        padding: 13px 12px;
+        padding: 13px 110px 13px 12px;
       }
 
       .button {
