@@ -4947,6 +4947,10 @@ form input[type=url] {
   margin: 0 15px;
 }
 /* line 123, ../scss/_header.scss */
+.nav.top-nav li:last-of-type {
+  margin-right: 0;
+}
+/* line 127, ../scss/_header.scss */
 .nav.top-nav li a {
   color: #a3a2a2;
   display: block;
@@ -4962,7 +4966,7 @@ form input[type=url] {
   keep this file as small as possible!
   */
 }
-/* line 138, ../scss/_header.scss */
+/* line 142, ../scss/_header.scss */
 .nav.top-nav li a:hover, .nav.top-nav li a:focus {
   color: #444;
 }
@@ -4973,13 +4977,18 @@ form input[type=url] {
 }
 /* line 4, ../scss/_sidebar.scss */
 .sidebar ul {
-  margin: 0 0 15px;
+  margin: 0 0 15px 25px;
 }
-/* line 8, ../scss/_sidebar.scss */
+/* line 7, ../scss/_sidebar.scss */
+.sidebar ul li {
+  list-style: disc;
+  margin: 0 0 7px;
+}
+/* line 13, ../scss/_sidebar.scss */
 .sidebar .widget {
   margin: 0 0 25px;
 }
-/* line 13, ../scss/_sidebar.scss */
+/* line 18, ../scss/_sidebar.scss */
 .sidebar .widget_search #s {
   margin: 0 0 10px;
 }
@@ -5210,6 +5219,7 @@ img {
 /* line 97, ../scss/_content.scss */
 .hentry .excerpt-read-more {
   display: inline-block !important;
+  float: left;
   font-weight: bold;
   margin-top: 20px;
   background-image: -webkit-linear-gradient(top, #299c00, #217d00);
@@ -5246,114 +5256,114 @@ img {
   background-image: linear-gradient(to bottom, #289700, #1a6300);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
 }
-/* line 106, ../scss/_content.scss */
+/* line 107, ../scss/_content.scss */
 .hentry header h2, .hentry header .h2 {
   margin: 0 0 3px;
 }
-/* line 110, ../scss/_content.scss */
+/* line 111, ../scss/_content.scss */
 .hentry header .byline {
   font-size: 0.9em;
   font-style: italic;
 }
 
 /* entry content */
-/* line 120, ../scss/_content.scss */
+/* line 121, ../scss/_content.scss */
 .entry-content blockquote {
   font-style: italic;
   font-size: 22px;
 }
-/* line 125, ../scss/_content.scss */
+/* line 126, ../scss/_content.scss */
 .entry-content dd {
   margin-left: 0;
   font-size: 0.9em;
   color: #787878;
   margin-bottom: 1.5em;
 }
-/* line 132, ../scss/_content.scss */
+/* line 133, ../scss/_content.scss */
 .entry-content img {
   margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 138, ../scss/_content.scss */
+/* line 139, ../scss/_content.scss */
 .entry-content video, .entry-content object {
   max-width: 100%;
   height: auto;
 }
-/* line 143, ../scss/_content.scss */
+/* line 144, ../scss/_content.scss */
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
   padding: 10px;
 }
 
-/* line 150, ../scss/_content.scss */
+/* line 151, ../scss/_content.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */
 }
-/* line 156, ../scss/_content.scss */
+/* line 157, ../scss/_content.scss */
 .wp-caption img {
   max-width: 100%;
   margin-bottom: 0;
   width: 100%;
 }
-/* line 162, ../scss/_content.scss */
+/* line 163, ../scss/_content.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
   text-align: center;
 }
 
-/* line 170, ../scss/_content.scss */
+/* line 171, ../scss/_content.scss */
 .events {
   padding-bottom: 60px;
   text-align: center;
 }
-/* line 174, ../scss/_content.scss */
+/* line 175, ../scss/_content.scss */
 .events h2 {
   margin: 35px 0 45px;
 }
-/* line 175, ../scss/_content.scss */
+/* line 176, ../scss/_content.scss */
 .events img {
   margin: 0 0 25px;
 }
 
-/* line 179, ../scss/_content.scss */
+/* line 180, ../scss/_content.scss */
 .upcoming-events {
   background: #5a351d;
   color: #fff;
   padding: 35px 0;
 }
-/* line 184, ../scss/_content.scss */
+/* line 185, ../scss/_content.scss */
 .upcoming-events .wrap > h2 {
   margin: 15px 0 45px;
 }
-/* line 187, ../scss/_content.scss */
+/* line 188, ../scss/_content.scss */
 .upcoming-events .event h2 {
   margin: 20px 0 25px;
   text-align: left;
 }
-/* line 191, ../scss/_content.scss */
+/* line 192, ../scss/_content.scss */
 .upcoming-events .event h2 a {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.25em;
 }
-/* line 199, ../scss/_content.scss */
+/* line 200, ../scss/_content.scss */
 .upcoming-events .event h3 {
   color: #e8c34f;
   margin: 0;
 }
-/* line 204, ../scss/_content.scss */
+/* line 205, ../scss/_content.scss */
 .upcoming-events .event h4 {
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
 }
-/* line 209, ../scss/_content.scss */
+/* line 210, ../scss/_content.scss */
 .upcoming-events .event .map {
   background-size: cover;
   background-position: center center;
@@ -5365,59 +5375,59 @@ img {
   border-radius: 4px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.25) inset;
 }
-/* line 222, ../scss/_content.scss */
+/* line 223, ../scss/_content.scss */
 .upcoming-events .event .button.hollow, .upcoming-events .event .gform_wrapper input.hollow[type="submit"], .gform_wrapper .upcoming-events .event input.hollow[type="submit"], .upcoming-events .event form input.hollow[type="submit"], form .upcoming-events .event input.hollow[type="submit"] {
   display: inline-block;
 }
-/* line 225, ../scss/_content.scss */
+/* line 226, ../scss/_content.scss */
 .upcoming-events .more-events {
   color: #fff;
   font-weight: bold;
   margin: 30px 0 0;
   text-align: center;
 }
-/* line 231, ../scss/_content.scss */
+/* line 232, ../scss/_content.scss */
 .upcoming-events .more-events a {
   color: #e8c34f;
 }
 
-/* line 236, ../scss/_content.scss */
+/* line 237, ../scss/_content.scss */
 .news {
   padding: 35px 0;
 }
-/* line 239, ../scss/_content.scss */
+/* line 240, ../scss/_content.scss */
 .news h3 {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 3px;
 }
-/* line 245, ../scss/_content.scss */
+/* line 246, ../scss/_content.scss */
 .news .post-meta {
   font-size: .75em;
   margin-top: 0;
 }
-/* line 250, ../scss/_content.scss */
+/* line 251, ../scss/_content.scss */
 .news .post-excerpt {
   font-size: .95em;
 }
-/* line 254, ../scss/_content.scss */
+/* line 255, ../scss/_content.scss */
 .news .twitter {
   margin-top: 25px;
 }
 
-/* line 261, ../scss/_content.scss */
+/* line 262, ../scss/_content.scss */
 .newsletter h4 {
   margin: 0;
 }
-/* line 263, ../scss/_content.scss */
+/* line 264, ../scss/_content.scss */
 .newsletter form {
   margin: 0;
 }
-/* line 266, ../scss/_content.scss */
+/* line 267, ../scss/_content.scss */
 .newsletter form div {
   position: relative;
 }
-/* line 270, ../scss/_content.scss */
+/* line 271, ../scss/_content.scss */
 .newsletter form input[type="email"] {
   background: #fff;
   border: none !important;
@@ -5425,7 +5435,7 @@ img {
   max-width: none;
   padding: 13px 110px 13px 12px;
 }
-/* line 278, ../scss/_content.scss */
+/* line 279, ../scss/_content.scss */
 .newsletter form .button, .newsletter form input[type="submit"] {
   display: inline-block;
   font-size: 13px;
@@ -5435,7 +5445,7 @@ img {
   top: 5px;
 }
 
-/* line 290, ../scss/_content.scss */
+/* line 291, ../scss/_content.scss */
 .sponsors {
   background: #eee;
   border-top: 1px solid #d5d5d5;
@@ -5444,52 +5454,52 @@ img {
   padding: 35px 0 45px;
   text-shadow: 0 1px 0 #fff;
 }
-/* line 294, ../scss/_content.scss */
+/* line 295, ../scss/_content.scss */
 .sponsors .sponsor h3 {
   text-align: center;
 }
-/* line 298, ../scss/_content.scss */
+/* line 299, ../scss/_content.scss */
 .sponsors .sponsor .logo {
   min-height: 125px;
   text-align: center;
 }
-/* line 302, ../scss/_content.scss */
+/* line 303, ../scss/_content.scss */
 .sponsors .sponsor .logo img {
   max-width: 100%;
 }
 
-/* line 310, ../scss/_content.scss */
+/* line 311, ../scss/_content.scss */
 .about {
   margin-bottom: 45px;
 }
-/* line 313, ../scss/_content.scss */
+/* line 314, ../scss/_content.scss */
 .about .content p {
   color: #217d00;
   font-size: 24px;
 }
 
-/* line 319, ../scss/_content.scss */
+/* line 320, ../scss/_content.scss */
 .team-member {
   margin: 20px 0;
   text-align: center;
 }
-/* line 323, ../scss/_content.scss */
+/* line 324, ../scss/_content.scss */
 .team-member .avatar {
   border-radius: 50%;
   margin: 0 0 15px;
   width: 70%;
 }
-/* line 329, ../scss/_content.scss */
+/* line 330, ../scss/_content.scss */
 .team-member h4 {
   margin: 0;
 }
-/* line 333, ../scss/_content.scss */
+/* line 334, ../scss/_content.scss */
 .team-member h6 {
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 340, ../scss/_content.scss */
+/* line 341, ../scss/_content.scss */
 .contact {
   padding: 35px 0 0;
 }

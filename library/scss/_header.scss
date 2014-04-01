@@ -120,6 +120,10 @@
     line-height: 57px;
     margin: 0 15px;
 
+    &:last-of-type {
+      margin-right: 0;
+    }
+
     a {
       color: #a3a2a2;
       display: block;

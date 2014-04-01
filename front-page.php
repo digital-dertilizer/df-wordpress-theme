@@ -9,13 +9,13 @@
 			<div id="main" role="main" class="wrap">
 				<?php global $post; ?>
 
-				<div class="clearfix">
-					<div class="content eightcol first">
+				<div class="row">
+					<div class="content large-8 columns">
 						<h3>What is Digital Fertilizer?</h3>
 						<?php echo wpautop( $post->post_content ); ?>
 					</div>
 
-					<div class="newsletter content-secondary fourcol last">
+					<div class="newsletter content-secondary large-4 columns">
 						<h4>Sign Up To Get The Digital Dirt</h4>
 						<p>Get a monthly recap of past events, upcoming events, job postings, and area startup news!</p>
 
@@ -60,15 +60,14 @@
 			<div class="wrap">
 				<h2>Upcoming Events</h2>
 
-				<div class="clearfix">
+				<div class="row">
 					<?php
 					$meetup_key = '47f4c54263d4b5c435839e6510174';
 					$json = file_get_contents( 'http://api.meetup.com/2/events.json/?group_urlname=digital-fertilizer&page=2&key=' . $meetup_key );
 					$events = json_decode( $json );
-					$first = 'first';
 
 					foreach ( $events->results as $event ) : ?>
-						<div class="event sixcol <?php echo $first; ?>">
+						<div class="event large-6 columns">
 							<h3 class="date-time"><?php echo date('l, F jS', ($event->time + $event->utc_offset) / 1000); ?></h3>
 							<h4 class="venue"><?php echo $event->venue->name; ?></h4>
 							<h2 class="title"><a href="<?php echo $event->event_url; ?>"><?php echo $event->name; ?></a></h2>
@@ -79,11 +78,6 @@
 							<?php endif; ?>
 							<a href="<?php echo $event->event_url; ?>" class="button hollow">RSVP &rarr;</a>
 						</div>
-						<?php if ( $first == 'first' ) {
-							$first = 'last';
-						} else {
-							$first = 'first';
-						} ?>
 					<?php endforeach; ?>
 				</div>
 
@@ -100,22 +94,20 @@
 				$first = 'first';
 				?>
 
-				<div class="clearfix">
+				<div class="row">
 					<?php foreach ( $posts as $post ) : ?>
 						<?php setup_postdata( $post ); ?>
 
-						<div class="post sixcol <?php echo $first; ?>">
+						<div class="post large-6 columns">
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<p class="post-meta">By <?php the_author_link(); ?> on <?php the_date(); ?></p>
 							<div class="post-excerpt">
 								<?php echo get_the_excerpt(); ?>
 							</div>
 						</div>
-
-						<?php if ($first == 'first') $first = 'last'; ?>
 					<?php endforeach; ?>
 
-					<div class="twitter sixcol last">
+					<div class="twitter large-6 columns">
 						<a class="twitter-timeline" href="https://twitter.com/DigitalFertilzr" data-widget-id="320175309087457280" data-chrome="nofooter noborders transparent">Tweets by @DigitalFertilzr</a>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 					</div>

@@ -2,7 +2,12 @@
   font-size: 14px;
 
   ul {
-    margin: 0 0 15px;
+    margin: 0 0 15px 25px;
+
+    li {
+      list-style: disc;
+      margin: 0 0 7px;
+    }
   }
 
   .widget {

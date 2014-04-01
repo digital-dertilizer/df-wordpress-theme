@@ -71,7 +71,7 @@
 						</div>
 
 						<div class="nav-wrap">
-							<nav role="navigation" class="wrap">
+							<nav role="navigation">
 								<?php bones_main_nav(); ?>
 							</nav>
 						</div>
