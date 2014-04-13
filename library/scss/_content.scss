@@ -257,36 +257,6 @@ img {
     }
   }
 
-  // Newsletter
-  .newsletter {
-    h4 { margin: 0; }
-
-    form {
-      margin: 0;
-
-      div {
-        position: relative;
-      }
-
-      input[type="email"] {
-        background: #fff;
-        border: none !important;
-        border-radius: 3px;
-        max-width: none;
-        padding: 13px 110px 13px 12px;
-      }
-
-      .button {
-        display: inline-block;
-        font-size: 13px;
-        padding: 10px 15px;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-      }
-    }
-  }
-
   // Sponsors
   .sponsors {
     @include dark-block;

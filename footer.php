@@ -3,15 +3,14 @@
           <div class="row">
             <div class="large-7 columns">
               <h4>Connect With Us</h4>
-              <!-- AddThis Button BEGIN -->
               <div class="addthis_toolbox addthis_default_style" style="margin-bottom: 25px;">
-                <a class="addthis_button_tweet"></a>
-                <a class="addthis_button_linkedin_counter"></a>
-                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_twitter_follow_native" tw:screen_name="DigitalFertilzr"></a>
+                <script type="IN/FollowCompany" data-id="3239370" data-counter="right"></script>
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:href="https://www.facebook.com/DigitalFertilizer"></a>
               </div>
-              <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-              <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53292d084e5118b5"></script>
-              <!-- AddThis Button END -->
+              <script>var addthis_config = { url: 'http://digitalfertilizer.org' };</script>
+              <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+              <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53292d084e5118b5"></script>
 
               <nav class="clearfix">
                 <div class="threecol first">

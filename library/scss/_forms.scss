@@ -18,6 +18,7 @@
   textarea {
     background: #f5f5f5;
     border: 1px solid #b8b8b8;
+    @include box-sizing(border-box);
     color: #aaa;
     display: block;
     font-size: 14px;
@@ -35,6 +36,7 @@
       border-color: $primary-color;
       box-shadow: 0 0 6px rgba($primary-color, 0.4);
       color: #333;
+      outline: none;
     }
 
     /* form validation */
@@ -73,5 +75,98 @@
 
   .ginput_complex .ginput_right input[type=text], .ginput_complex .ginput_right input[type=url], .ginput_complex .ginput_right input[type=email], .ginput_complex .ginput_right input[type=tel], .ginput_complex .ginput_right input[type=number], .ginput_complex .ginput_right input[type=password], .ginput_complex .ginput_right select {
     width: 100% !important;
+  }
+}
+
+// Newsletter
+.newsletter {
+  h4 {
+    margin: 0;
+  }
+
+  form {
+    margin: 0;
+
+    div {
+      background: #fff;
+      border-radius: 3px;
+      padding: 13px 110px 13px 12px;
+      position: relative;
+    }
+
+    input[type="email"] {
+      background: transparent;
+      border: none !important;
+      display: block;
+      height: 20px;
+      line-height: 20px;
+      max-width: none;
+      padding: 0 93px 0 0;
+      width: 100%;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    .button {
+      bottom: 5px;
+      display: inline-block;
+      font-size: 13px;
+      padding: 10px 15px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+  }
+}
+
+// Search
+#searchform {
+  float: right;
+  margin: 10px 0 10px 25px;
+  position: relative;
+
+  .screen-reader-text {
+    display: none;
+  }
+
+  #s {
+    background: rgba(#000, 0.1);
+    border: none;
+    border-radius: 50px;
+    color: #555;
+
+    &:focus {
+      background: rgba(#000, 0.2);
+      box-shadow: none;
+    }
+
+    @include placeholder {
+      color: #777;
+    }
+  }
+
+  #searchsubmit {
+    background: transparent url(../images/icon-search.png) no-repeat;
+    border: none;
+    height: 17px;
+    padding: 0;
+    position: absolute;
+    right: 10px;
+    text-indent: -999em;
+    top: 10px;
+    width: 18px;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    display: block;
+    float: none;
+    margin: 10px 15px;
   }
 }

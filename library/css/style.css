@@ -4664,6 +4664,9 @@ form input[type=url],
 form textarea {
   background: #f5f5f5;
   border: 1px solid #b8b8b8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #aaa;
   display: block;
   font-size: 14px;
@@ -4677,7 +4680,7 @@ form textarea {
   width: 100% !important;
   /* form validation */
 }
-/* line 33, ../scss/_forms.scss */
+/* line 34, ../scss/_forms.scss */
 .gform_wrapper input[type=text]:focus,
 .gform_wrapper input[type=email]:focus,
 .gform_wrapper input[type=url]:focus,
@@ -4689,8 +4692,9 @@ form textarea:focus {
   border-color: #217d00;
   box-shadow: 0 0 6px rgba(33, 125, 0, 0.4);
   color: #333;
+  outline: none;
 }
-/* line 41, ../scss/_forms.scss */
+/* line 43, ../scss/_forms.scss */
 .gform_wrapper input[type=text]:invalid,
 .gform_wrapper input[type=email]:invalid,
 .gform_wrapper input[type=url]:invalid,
@@ -4706,7 +4710,7 @@ form textarea:invalid {
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 52, ../scss/_forms.scss */
+/* line 54, ../scss/_forms.scss */
 .gform_wrapper input[type=text],
 .gform_wrapper input[type=email],
 .gform_wrapper input[type=url], form input[type=text],
@@ -4715,19 +4719,124 @@ form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 59, ../scss/_forms.scss */
+/* line 61, ../scss/_forms.scss */
 .gform_wrapper textarea, form textarea {
   resize: none;
   width: 97.3%;
   height: 150px;
 }
-/* line 70, ../scss/_forms.scss */
+/* line 72, ../scss/_forms.scss */
 .gform_wrapper input[type=text], .gform_wrapper input[type=email], .gform_wrapper input[type=url], .gform_wrapper input[type=text], .gform_wrapper input[type=email], .gform_wrapper input[type=url], form input[type=text], form input[type=email], form input[type=url], form input[type=text], form input[type=email], form input[type=url] {
   max-width: none;
 }
-/* line 74, ../scss/_forms.scss */
+/* line 76, ../scss/_forms.scss */
 .gform_wrapper .ginput_complex .ginput_right input[type=text], .gform_wrapper .ginput_complex .ginput_right input[type=url], .gform_wrapper .ginput_complex .ginput_right input[type=email], .gform_wrapper .ginput_complex .ginput_right input[type=tel], .gform_wrapper .ginput_complex .ginput_right input[type=number], .gform_wrapper .ginput_complex .ginput_right input[type=password], .gform_wrapper .ginput_complex .ginput_right select, form .ginput_complex .ginput_right input[type=text], form .ginput_complex .ginput_right input[type=url], form .ginput_complex .ginput_right input[type=email], form .ginput_complex .ginput_right input[type=tel], form .ginput_complex .ginput_right input[type=number], form .ginput_complex .ginput_right input[type=password], form .ginput_complex .ginput_right select {
   width: 100% !important;
+}
+
+/* line 83, ../scss/_forms.scss */
+.newsletter h4 {
+  margin: 0;
+}
+/* line 87, ../scss/_forms.scss */
+.newsletter form {
+  margin: 0;
+}
+/* line 90, ../scss/_forms.scss */
+.newsletter form div {
+  background: #fff;
+  border-radius: 3px;
+  padding: 13px 110px 13px 12px;
+  position: relative;
+}
+/* line 97, ../scss/_forms.scss */
+.newsletter form input[type="email"] {
+  background: transparent;
+  border: none !important;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  max-width: none;
+  padding: 0 93px 0 0;
+  width: 100%;
+}
+/* line 107, ../scss/_forms.scss */
+.newsletter form input[type="email"]:focus {
+  box-shadow: none;
+  outline: none;
+}
+/* line 113, ../scss/_forms.scss */
+.newsletter form .button, .newsletter form input[type="submit"] {
+  bottom: 5px;
+  display: inline-block;
+  font-size: 13px;
+  padding: 10px 15px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+/* line 126, ../scss/_forms.scss */
+#searchform {
+  float: right;
+  margin: 10px 0 10px 25px;
+  position: relative;
+}
+/* line 131, ../scss/_forms.scss */
+#searchform .screen-reader-text {
+  display: none;
+}
+/* line 135, ../scss/_forms.scss */
+#searchform #s {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 50px;
+  color: #555;
+}
+/* line 141, ../scss/_forms.scss */
+#searchform #s:focus {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+/* line 4, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/css3/_placeholder.scss */
+#searchform #s::-webkit-input-placeholder {
+  color: #777;
+}
+/* line 4, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/css3/_placeholder.scss */
+#searchform #s::-moz-placeholder {
+  color: #777;
+}
+/* line 4, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/css3/_placeholder.scss */
+#searchform #s:-moz-placeholder {
+  color: #777;
+}
+/* line 4, ../../../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/bourbon/bourbon/app/assets/stylesheets/css3/_placeholder.scss */
+#searchform #s:-ms-input-placeholder {
+  color: #777;
+}
+/* line 151, ../scss/_forms.scss */
+#searchform #searchsubmit {
+  background: transparent url(../images/icon-search.png) no-repeat;
+  border: none;
+  height: 17px;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  text-indent: -999em;
+  top: 10px;
+  width: 18px;
+}
+/* line 162, ../scss/_forms.scss */
+#searchform #searchsubmit:hover {
+  box-shadow: none;
+}
+@media screen and (max-width: 640px) {
+  /* line 126, ../scss/_forms.scss */
+  #searchform {
+    display: block;
+    float: none;
+    margin: 10px 15px;
+  }
 }
 
 /* line 1, ../scss/_buttons.scss */
@@ -5415,37 +5524,7 @@ img {
   margin-top: 25px;
 }
 
-/* line 262, ../scss/_content.scss */
-.newsletter h4 {
-  margin: 0;
-}
-/* line 264, ../scss/_content.scss */
-.newsletter form {
-  margin: 0;
-}
-/* line 267, ../scss/_content.scss */
-.newsletter form div {
-  position: relative;
-}
-/* line 271, ../scss/_content.scss */
-.newsletter form input[type="email"] {
-  background: #fff;
-  border: none !important;
-  border-radius: 3px;
-  max-width: none;
-  padding: 13px 110px 13px 12px;
-}
-/* line 279, ../scss/_content.scss */
-.newsletter form .button, .newsletter form input[type="submit"] {
-  display: inline-block;
-  font-size: 13px;
-  padding: 10px 15px;
-  position: absolute;
-  right: 5px;
-  top: 5px;
-}
-
-/* line 291, ../scss/_content.scss */
+/* line 261, ../scss/_content.scss */
 .sponsors {
   background: #eee;
   border-top: 1px solid #d5d5d5;
@@ -5454,52 +5533,52 @@ img {
   padding: 35px 0 45px;
   text-shadow: 0 1px 0 #fff;
 }
-/* line 295, ../scss/_content.scss */
+/* line 265, ../scss/_content.scss */
 .sponsors .sponsor h3 {
   text-align: center;
 }
-/* line 299, ../scss/_content.scss */
+/* line 269, ../scss/_content.scss */
 .sponsors .sponsor .logo {
   min-height: 125px;
   text-align: center;
 }
-/* line 303, ../scss/_content.scss */
+/* line 273, ../scss/_content.scss */
 .sponsors .sponsor .logo img {
   max-width: 100%;
 }
 
-/* line 311, ../scss/_content.scss */
+/* line 281, ../scss/_content.scss */
 .about {
   margin-bottom: 45px;
 }
-/* line 314, ../scss/_content.scss */
+/* line 284, ../scss/_content.scss */
 .about .content p {
   color: #217d00;
   font-size: 24px;
 }
 
-/* line 320, ../scss/_content.scss */
+/* line 290, ../scss/_content.scss */
 .team-member {
   margin: 20px 0;
   text-align: center;
 }
-/* line 324, ../scss/_content.scss */
+/* line 294, ../scss/_content.scss */
 .team-member .avatar {
   border-radius: 50%;
   margin: 0 0 15px;
   width: 70%;
 }
-/* line 330, ../scss/_content.scss */
+/* line 300, ../scss/_content.scss */
 .team-member h4 {
   margin: 0;
 }
-/* line 334, ../scss/_content.scss */
+/* line 304, ../scss/_content.scss */
 .team-member h6 {
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 341, ../scss/_content.scss */
+/* line 311, ../scss/_content.scss */
 .contact {
   padding: 35px 0 0;
 }
