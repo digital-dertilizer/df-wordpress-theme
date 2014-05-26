@@ -46,7 +46,7 @@
           </div>
         </div>
         <div class="footer-bottom clearfix">
-          <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+          <p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved.</p>
         </div>
       </footer> <!-- end footer -->
     </div> <!-- end #container -->

@@ -122,6 +122,10 @@
   }
 }
 
+#recaptcha_response_field {
+  min-width: 0 !important;
+}
+
 // Search
 #searchform {
   float: right;

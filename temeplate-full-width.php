@@ -11,10 +11,10 @@ get_header(); ?>
 			<h1 class="title-bar"><?php the_title(); ?></h1>
 		</header>
 
-		<?php $focus = get_post_meta( get_the_ID(), 'focus' ); ?>
-		<?php if ( ! empty( $focus ) ) : ?>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' ); ?>
 			<div class="focus">
-				<img class="focus-image" src="<?php echo $focus[0]; ?>" alt="">
+				<img class="focus-image" src="<?php echo $image_url[0]; ?>" alt="">
 			</div>
 		<?php endif; ?>
 

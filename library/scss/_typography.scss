@@ -24,23 +24,26 @@ h1, .h1 {
     margin: 0;
     padding: 20px 0;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
 h2, .h2 {
   color: $primary-color;
   font-size: 24px;
+  font-weight: bold;
   letter-spacing: 1px;
   line-height: 1.4em;
+  text-transform: uppercase;
 }
 
 h3, .h3 {
-  color: $secondary-color;
+  color: $primary-color;
   font-size: 18px;
 }
 
 h4, .h4 {
-  color: $primary-color;
+  color: $secondary-color;
   font-size: 16px;
   font-weight: 100;
 }
