@@ -52,17 +52,17 @@ get_header(); ?>
 						<p><?php echo $company->post_content; ?></p>
 
 						<?php $post_meta = get_post_meta( $company->ID ); ?>
-						<a class="icon-link" href="<?php echo $post_meta['wpcf-website']; ?>"></a>
+						<a class="icon-link" href="<?php echo $post_meta['wpcf-website'][0]; ?>"></a>
 						<?php if ( isset($post_meta['wpcf-twitter']) ) : ?>
-							<a class="icon-twitter" href="<?php echo $post_meta['wpcf-twitter']; ?>"></a>
+							<a class="icon-twitter" href="<?php echo $post_meta['wpcf-twitter'][0]; ?>"></a>
 						<?php endif; ?>
 						<?php if ( isset($post_meta['wpcf-facebook']) ) : ?>
-							<a class="icon-facebook" href="<?php echo $post_meta['wpcf-facebook']; ?>"></a>
+							<a class="icon-facebook" href="<?php echo $post_meta['wpcf-facebook'][0]; ?>"></a>
 						<?php endif; ?>
 						<?php if ( isset($post_meta['wpcf-linkedin']) ) : ?>
-							<a class="icon-linkedin" href="<?php echo $post_meta['wpcf-linkedin']; ?>"></a>
+							<a class="icon-linkedin" href="<?php echo $post_meta['wpcf-linkedin'][0]; ?>"></a>
 						<?php endif; ?>
-						<a class="icon-mail" href="mailto:<?php echo $post_meta['wpcf-email']; ?>"></a>
+						<a class="icon-mail" href="mailto:<?php echo $post_meta['wpcf-email'][0]; ?>"></a>
 					</div>
 				<?php endforeach; ?>
 			</div>
