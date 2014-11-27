@@ -31,7 +31,7 @@ get_header(); ?>
 						<p class="description">Get your startup listed here!</p>
 					</div>
 					<div class="large-4 columns">
-						<a href="<?php echo home_url( 'our-companies/add-yours' ); ?>" class="button block">Add Your Company</a>
+						<a href="<?php echo home_url( 'statups/add-yours' ); ?>" class="button block">Add Your Startup</a>
 					</div>
 				</div>
 			</div>

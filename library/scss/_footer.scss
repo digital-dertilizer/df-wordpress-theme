@@ -62,19 +62,19 @@
 }
 
 // Font Icons
-.icon {
+[class^="icon-"] {
   display: inline-block;
   font-family: 'Entypo';
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
 
   @include transition(.3s color);
-
-  &.twitter { color: #4099ff; }
-  &.facebook { color: #3B5998; }
-  &.linkedin { color: #007bb6; }
-  &.google { color: #d34836; }
 }
+
+.icon-twitter { color: #4099ff; }
+.icon-facebook { color: #3B5998; }
+.icon-linkedin { color: #007bb6; }
+.icon-google { color: #d34836; }
 
 // Twitter Widgets
 .twitter-tweet { margin: 0 auto !important; }

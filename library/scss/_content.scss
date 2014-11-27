@@ -167,6 +167,17 @@ img {
     }
   }
 
+  // Galleries
+  .gallery {
+    text-align: center;
+
+    .gallery-item {
+      display: inline-block;
+      margin: 0 15px;
+      width: auto;
+    }
+  }
+
   // Events
   .events {
     padding-bottom: 60px;

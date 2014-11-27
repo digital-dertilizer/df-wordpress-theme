@@ -30,22 +30,22 @@
 							<?php
 							$twitter_url = get_the_author_meta( 'twitter_url' );
 							if ( !empty( $twitter_url ) ) {
-								echo '<li><a class="icon twitter" href="' . esc_url( $twitter_url ) . '">&#62217;</a></li>';
+								echo '<li><a class="icon-twitter" href="' . esc_url( $twitter_url ) . '"></a></li>';
 							}
 
 							$facebook_url = get_the_author_meta( 'facebook_url' );
 							if ( !empty( $facebook_url ) ) {
-								echo '<li><a class="icon facebook" href="' . esc_url( $facebook_url ) . '">&#62220;</a></li>';
+								echo '<li><a class="icon-facebook" href="' . esc_url( $facebook_url ) . '"></a></li>';
 							}
 
 							$linkedin_url = get_the_author_meta( 'linkedin_url' );
 							if ( !empty( $linkedin_url ) ) {
-								echo '<li><a class="icon linkedin" href="' . esc_url( $linkedin_url ) . '">&#62232;</a></li>';
+								echo '<li><a class="icon-linkedin" href="' . esc_url( $linkedin_url ) . '"></a></li>';
 							}
 
 							$google_url = get_the_author_meta( 'google_url' );
 							if ( !empty( $google_url ) ) {
-								echo '<li><a class="icon google" href="' . esc_url( $google_url ) . '">&#62223;</a></li>';
+								echo '<li><a class="icon-google" href="' . esc_url( $google_url ) . '"></a></li>';
 							} ?>
 						</ul>
 						<p class="bio"><?php the_author_meta( 'description' ); ?></p>
